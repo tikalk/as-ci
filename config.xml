@@ -58,6 +58,11 @@
               <id>jdk-8u66-oth-JPR</id>
               <acceptLicense>true</acceptLicense>
             </hudson.tools.JDKInstaller>
+            <hudson.tools.CommandInstaller>
+              <label>openjdk-8</label>
+              <command>sudo apt-get install openjdk-8-jdk</command>
+              <toolHome>${JENKINS_HOME}/tools</toolHome>
+            </hudson.tools.CommandInstaller>
           </installers>
         </hudson.tools.InstallSourceProperty>
       </properties>
