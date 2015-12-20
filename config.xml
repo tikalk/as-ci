@@ -100,6 +100,7 @@
         <string>as-gps-firehose</string>
         <string>as-gps-service</string>
         <string>as-management</string>
+        <string>as-notifications</string>
         <string>as-segments-service</string>
       </jobNames>
       <jobFilters/>
