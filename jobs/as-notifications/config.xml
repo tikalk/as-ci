@@ -13,7 +13,7 @@
     <configVersion>2</configVersion>
     <userRemoteConfigs>
       <hudson.plugins.git.UserRemoteConfig>
-        <url>git://github.com/tikalk/as-device-manager.git</url>
+        <url>git://github.com/tikalk/as-notifications.git</url>
         <credentialsId>59eaf870-c4a2-46c5-a6dc-7d37a2210978</credentialsId>
       </hudson.plugins.git.UserRemoteConfig>
     </userRemoteConfigs>
@@ -26,7 +26,7 @@
     <submoduleCfg class="list"/>
     <extensions>
       <hudson.plugins.git.extensions.impl.RelativeTargetDirectory>
-        <relativeTargetDir>as-device-manager</relativeTargetDir>
+        <relativeTargetDir>as-notifications</relativeTargetDir>
       </hudson.plugins.git.extensions.impl.RelativeTargetDirectory>
     </extensions>
   </scm>
@@ -43,7 +43,7 @@
       <switches>-PdockerHost=localhost  -PregisterBaseName=dreg.tikalknowledge.com:5000 -PdockerBranch=master</switches>
       <tasks>clean shadowJar zipAll buildImage pushImage</tasks>
       <rootBuildScriptDir></rootBuildScriptDir>
-      <buildFile>as-device-manager/build.gradle</buildFile>
+      <buildFile>as-notifications/build.gradle</buildFile>
       <gradleName>(Default)</gradleName>
       <useWrapper>true</useWrapper>
       <makeExecutable>false</makeExecutable>
