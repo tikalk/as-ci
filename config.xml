@@ -22,7 +22,7 @@
       <authenticatedUserCreateJobPermission>false</authenticatedUserCreateJobPermission>
       <allowGithubWebHookPermission>false</allowGithubWebHookPermission>
       <allowCcTrayPermission>false</allowCcTrayPermission>
-      <allowAnonymousReadPermission>false</allowAnonymousReadPermission>
+      <allowAnonymousReadPermission>true</allowAnonymousReadPermission>
       <allowAnonymousJobStatusPermission>false</allowAnonymousJobStatusPermission>
     </rootACL>
   </authorizationStrategy>
