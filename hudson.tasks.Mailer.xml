@@ -1,5 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <hudson.tasks.Mailer_-DescriptorImpl plugin="mailer@1.16">
+  <defaultSuffix>@tikalk.com</defaultSuffix>
   <hudsonUrl>http://ci.tikalknowledge.com/:8080/</hudsonUrl>
   <replyToAddress>noreply@tikalk.com</replyToAddress>
   <smtpHost>localhost</smtpHost>
