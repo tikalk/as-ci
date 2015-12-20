@@ -1,12 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <hudson.tasks.Mailer_-DescriptorImpl plugin="mailer@1.16">
-  <defaultSuffix>@tikalk.com</defaultSuffix>
   <hudsonUrl>http://ci.tikalknowledge.com/:8080/</hudsonUrl>
-  <smtpAuthUsername>hagzag@tikalk.com</smtpAuthUsername>
-  <smtpAuthPassword>QQ2mRJ07NLy00iMq/oa558iwCh+RLeQizOF/oshduR8=</smtpAuthPassword>
   <replyToAddress>noreply@tikalk.com</replyToAddress>
-  <smtpHost>smtp.gmail.com</smtpHost>
-  <useSsl>true</useSsl>
-  <smtpPort>465</smtpPort>
+  <useSsl>false</useSsl>
   <charset>UTF-8</charset>
 </hudson.tasks.Mailer_-DescriptorImpl>
