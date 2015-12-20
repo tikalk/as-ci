@@ -71,6 +71,7 @@
         <string>as-geocoder-facade</string>
         <string>as-gps-firehose</string>
         <string>as-gps-service</string>
+        <string>as-management</string>
         <string>as-segments-service</string>
       </jobNames>
       <jobFilters/>
