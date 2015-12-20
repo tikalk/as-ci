@@ -56,7 +56,7 @@
           <installers>
             <hudson.tools.JDKInstaller>
               <id>jdk-8u66-oth-JPR</id>
-              <acceptLicense>false</acceptLicense>
+              <acceptLicense>true</acceptLicense>
             </hudson.tools.JDKInstaller>
           </installers>
         </hudson.tools.InstallSourceProperty>
