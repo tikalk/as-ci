@@ -33,7 +33,7 @@
   <triggers/>
   <concurrentBuild>false</concurrentBuild>
   <rootModule>
-    <groupId>com.tikal.angelsense</groupId>
+    <groupId>com.tikal.fleettracker</groupId>
     <artifactId>as-analytics</artifactId>
   </rootModule>
   <goals>clean install docker:build docker:push -debug</goals>
