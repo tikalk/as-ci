@@ -30,7 +30,7 @@
   <disabled>false</disabled>
   <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
   <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
-  <jdk>jdk8-6</jdk>
+  <jdk>jdk8</jdk>
   <triggers/>
   <concurrentBuild>false</concurrentBuild>
   <rootModule>
