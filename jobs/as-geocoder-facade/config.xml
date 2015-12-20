@@ -40,7 +40,7 @@
     <hudson.plugins.gradle.Gradle plugin="gradle@1.24">
       <description></description>
       <switches>-PdockerHost=http://localhost:2376  -PregisterBaseName=dreg.tikalknowledge.com:5000 -PdockerBranch=master</switches>
-      <tasks>clean shadowJar zipAll buildImage pushImage</tasks>
+      <tasks>clean build buildImage pushImage</tasks>
       <rootBuildScriptDir></rootBuildScriptDir>
       <buildFile>as-geocoder-facade/build.gradle</buildFile>
       <gradleName>(Default)</gradleName>
