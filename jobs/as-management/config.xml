@@ -26,7 +26,7 @@
     <submoduleCfg class="list"/>
     <extensions>
       <hudson.plugins.git.extensions.impl.RelativeTargetDirectory>
-        <relativeTargetDir>as-device-manager</relativeTargetDir>
+        <relativeTargetDir>as-management</relativeTargetDir>
       </hudson.plugins.git.extensions.impl.RelativeTargetDirectory>
     </extensions>
   </scm>
@@ -40,9 +40,9 @@
     <hudson.plugins.gradle.Gradle plugin="gradle@1.24">
       <description></description>
       <switches>-PdockerHost=localhost  -PregisterBaseName=dreg.tikalknowledge.com:5000 -PdockerBranch=master</switches>
-      <tasks>clean shadowJar zipAll buildImage pushImage</tasks>
+      <tasks>clean build buildImage pushImage</tasks>
       <rootBuildScriptDir></rootBuildScriptDir>
-      <buildFile>as-device-manager/build.gradle</buildFile>
+      <buildFile>as-management/build.gradle</buildFile>
       <gradleName>(Default)</gradleName>
       <useWrapper>true</useWrapper>
       <makeExecutable>false</makeExecutable>
