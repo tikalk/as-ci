@@ -52,7 +52,7 @@
   </builders>
   <publishers>
     <hudson.tasks.Mailer plugin="mailer@1.16">
-      <recipients></recipients>
+      <recipients>webmaster@tikalk.com</recipients>
       <dontNotifyEveryUnstableBuild>false</dontNotifyEveryUnstableBuild>
       <sendToIndividuals>true</sendToIndividuals>
     </hudson.tasks.Mailer>
