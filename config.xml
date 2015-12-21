@@ -16,6 +16,7 @@
         <string>liyaka</string>
         <string>yanai</string>
         <string>levplotkin</string>
+        <string>mio-g</string>
       </adminUserNameList>
       <authenticatedUserReadPermission>false</authenticatedUserReadPermission>
       <useRepositoryPermissions>false</useRepositoryPermissions>
