@@ -57,6 +57,8 @@
 echo &quot;Running the application&quot;
 docker-compose up -d
 
+sleep 10
+
 chmod +x test.sh
 ./test.sh
 
