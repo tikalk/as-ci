@@ -54,8 +54,10 @@
     <hudson.tasks.Shell>
       <command>echo YR_VERSION=${YR_VERSION}
 
+echo &quot;Running the application&quot;
 docker-compose up -d
 
+chmod +x test.sh
 ./test.sh
 
 </command>
