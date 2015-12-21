@@ -85,6 +85,21 @@ chmod +x test.sh
           <RunIfJobSuccessful>false</RunIfJobSuccessful>
           <script>docker rm -f mongodb yremote ynginx</script>
         </hudson.plugins.postbuildtask.TaskProperties>
+        <hudson.plugins.postbuildtask.TaskProperties>
+          <logTexts>
+            <hudson.plugins.postbuildtask.LogProperties>
+              <logText>Test status is Success</logText>
+              <operator>AND</operator>
+            </hudson.plugins.postbuildtask.LogProperties>
+          </logTexts>
+          <EscalateStatus>false</EscalateStatus>
+          <RunIfJobSuccessful>false</RunIfJobSuccessful>
+          <script>docker tag -f ${DOCKER_REGISTRY}/yremote/yremote:${YR_VERSION} ${DOCKER_REGISTRY}/yremote/yremote:latest&#xd;
+docker push ${DOCKER_REGISTRY}/yremote/yremote:latest&#xd;
+&#xd;
+docker tag -f ${DOCKER_REGISTRY}/yremote/ynginx:${YR_VERSION} ${DOCKER_REGISTRY}/yremote/ynginx:latest&#xd;
+docker push ${DOCKER_REGISTRY}/yremote/ynginx:latest</script>
+        </hudson.plugins.postbuildtask.TaskProperties>
       </tasks>
     </hudson.plugins.postbuildtask.PostbuildTask>
     <hudson.plugins.descriptionsetter.DescriptionSetterPublisher plugin="description-setter@1.10">
