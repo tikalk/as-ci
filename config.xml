@@ -125,7 +125,7 @@
       <properties class="hudson.model.View$PropertyList"/>
       <jobNames>
         <comparator class="hudson.util.CaseInsensitiveComparator"/>
-        <string>docker-yremote</string>
+        <string>yremote-build</string>
         <string>yremote-sanity</string>
       </jobNames>
       <jobFilters/>
