@@ -41,7 +41,7 @@
     <hudson.plugins.gradle.Gradle plugin="gradle@1.24">
       <description></description>
       <switches>-PdockerHost=localhost  -PregisterBaseName=dreg.tikalknowledge.com:5000 -PdockerBranch=master</switches>
-      <tasks>build</tasks>
+      <tasks>build buildImage pushImage</tasks>
       <rootBuildScriptDir></rootBuildScriptDir>
       <buildFile>as-device-manager/build.gradle</buildFile>
       <gradleName>(Default)</gradleName>
