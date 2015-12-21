@@ -55,7 +55,7 @@
       <command>echo YR_VERSION=${YR_VERSION}
 
 echo &quot;Running the application&quot;
-#docker-compose up -d
+docker-compose up -d
 
 sleep 10
 
