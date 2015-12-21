@@ -49,7 +49,7 @@
     <hudson.tasks.Shell>
       <command>echo YR_VERSION=${YR_VERSION}
 
-docker-compose -d up
+docker-compose up -d
 
 ./test.sh
 
