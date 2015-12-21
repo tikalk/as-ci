@@ -42,7 +42,7 @@
   <builders>
     <hudson.plugins.copyartifact.CopyArtifact plugin="copyartifact@1.37">
       <project>yremote-build</project>
-      <filter>docker-compose.yml,test.sh</filter>
+      <filter>docker-compose.yml, test.sh</filter>
       <target></target>
       <excludes></excludes>
       <selector class="hudson.plugins.copyartifact.SpecificBuildSelector">
