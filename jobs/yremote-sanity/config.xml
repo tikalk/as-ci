@@ -75,7 +75,7 @@ chmod +x test.sh
           </logTexts>
           <EscalateStatus>false</EscalateStatus>
           <RunIfJobSuccessful>false</RunIfJobSuccessful>
-          <script>docker-compose rm -f</script>
+          <script>docker rm -f mongodb yremote ynginx</script>
         </hudson.plugins.postbuildtask.TaskProperties>
       </tasks>
     </hudson.plugins.postbuildtask.PostbuildTask>
