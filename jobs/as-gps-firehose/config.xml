@@ -43,7 +43,7 @@
       <switches>-PdockerHost=http://localhost:2376  -PregisterBaseName=dreg.tikalknowledge.com:5000 -PdockerBranch=master -PcertUrl=&quot;&quot;</switches>
       <tasks>build buildImage pushImage</tasks>
       <rootBuildScriptDir></rootBuildScriptDir>
-      <buildFile>as-device-manager/build.gradle</buildFile>
+      <buildFile>as-gps-firehose/build.gradle</buildFile>
       <gradleName>(Default)</gradleName>
       <useWrapper>true</useWrapper>
       <makeExecutable>false</makeExecutable>
