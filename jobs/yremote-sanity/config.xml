@@ -37,7 +37,7 @@
   <builders>
     <hudson.plugins.copyartifact.CopyArtifact plugin="copyartifact@1.37">
       <project>yremote-build</project>
-      <filter>docker-compose.yml</filter>
+      <filter>docker-compose.yml,test.sh</filter>
       <target></target>
       <excludes></excludes>
       <selector class="hudson.plugins.copyartifact.SpecificBuildSelector">
@@ -50,6 +50,8 @@
       <command>echo YR_VERSION=${YR_VERSION}
 
 docker-compose up
+
+./test.sh
 
 </command>
     </hudson.tasks.Shell>
