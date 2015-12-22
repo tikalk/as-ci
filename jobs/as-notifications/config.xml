@@ -2,6 +2,7 @@
 <project>
   <actions/>
   <description></description>
+  <displayName>ft-notifications</displayName>
   <keepDependencies>false</keepDependencies>
   <properties>
     <com.sonyericsson.rebuild.RebuildSettings plugin="rebuild@1.25">
