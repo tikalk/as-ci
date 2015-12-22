@@ -2,6 +2,7 @@
 <maven2-moduleset plugin="maven-plugin@2.12.1">
   <actions/>
   <description> </description>
+  <displayName>ft-analytics</displayName>
   <keepDependencies>false</keepDependencies>
   <properties>
     <com.sonyericsson.rebuild.RebuildSettings plugin="rebuild@1.25">
