@@ -89,7 +89,7 @@
     </hudson.model.AllView>
     <listView>
       <owner class="hudson" reference="../../.."/>
-      <name>AS</name>
+      <name>FT</name>
       <filterExecutors>false</filterExecutors>
       <filterQueue>false</filterQueue>
       <properties class="hudson.model.View$PropertyList"/>
@@ -142,7 +142,7 @@
       <recurse>false</recurse>
     </listView>
   </views>
-  <primaryView>AS</primaryView>
+  <primaryView>FT</primaryView>
   <slaveAgentPort>0</slaveAgentPort>
   <label></label>
   <nodeProperties/>
