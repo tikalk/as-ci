@@ -104,6 +104,7 @@
         <string>as-notifications</string>
         <string>as-segments-service</string>
         <string>ft-analytics-deploy</string>
+        <string>test-deploy</string>
       </jobNames>
       <jobFilters/>
       <columns>
