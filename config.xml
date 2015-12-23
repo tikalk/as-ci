@@ -103,6 +103,7 @@
         <string>as-management</string>
         <string>as-notifications</string>
         <string>as-segments-service</string>
+        <string>ft-analytics-deploy</string>
       </jobNames>
       <jobFilters/>
       <columns>
