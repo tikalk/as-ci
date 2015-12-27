@@ -17,6 +17,7 @@
         <string>yanai</string>
         <string>levplotkin</string>
         <string>mio-g</string>
+        <string>AdamBalali</string>
       </adminUserNameList>
       <authenticatedUserReadPermission>false</authenticatedUserReadPermission>
       <useRepositoryPermissions>false</useRepositoryPermissions>
