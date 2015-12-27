@@ -145,7 +145,7 @@
       <recurse>false</recurse>
     </listView>
   </views>
-  <primaryView>FT</primaryView>
+  <primaryView>DW</primaryView>
   <slaveAgentPort>0</slaveAgentPort>
   <label></label>
   <nodeProperties/>
