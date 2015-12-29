@@ -65,6 +65,7 @@ ANDROID_HOME=/opt/jenkins/tools/android-sdk</propertiesContent>
       <screenDensity>160</screenDensity>
       <screenResolution>HVGA</screenResolution>
       <deviceLocale>en_US</deviceLocale>
+      <targetAbi>armeabi-v7a</targetAbi>
       <hardwareProperties/>
       <wipeData>false</wipeData>
       <showWindow>false</showWindow>
