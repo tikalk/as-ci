@@ -40,11 +40,11 @@
   <builders>
     <hudson.plugins.gradle.Gradle plugin="gradle@1.24">
       <description></description>
-      <switches></switches>
+      <switches>--stacktrace</switches>
       <tasks>clean build</tasks>
       <rootBuildScriptDir></rootBuildScriptDir>
       <buildFile></buildFile>
-      <gradleName>2.4</gradleName>
+      <gradleName>Default</gradleName>
       <useWrapper>false</useWrapper>
       <makeExecutable>true</makeExecutable>
       <fromRootBuildScriptDir>true</fromRootBuildScriptDir>
