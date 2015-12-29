@@ -15,5 +15,19 @@
       </properties>
       <gradleHome></gradleHome>
     </hudson.plugins.gradle.GradleInstallation>
+    <hudson.plugins.gradle.GradleInstallation>
+      <name>2.4</name>
+      <home></home>
+      <properties>
+        <hudson.tools.InstallSourceProperty>
+          <installers>
+            <hudson.plugins.gradle.GradleInstaller>
+              <id>2.4</id>
+            </hudson.plugins.gradle.GradleInstaller>
+          </installers>
+        </hudson.tools.InstallSourceProperty>
+      </properties>
+      <gradleHome></gradleHome>
+    </hudson.plugins.gradle.GradleInstallation>
   </installations>
 </hudson.plugins.gradle.Gradle_-DescriptorImpl>
