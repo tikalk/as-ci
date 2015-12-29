@@ -42,7 +42,7 @@
       <description></description>
       <switches></switches>
       <tasks></tasks>
-      <rootBuildScriptDir>app</rootBuildScriptDir>
+      <rootBuildScriptDir></rootBuildScriptDir>
       <buildFile></buildFile>
       <gradleName>Default</gradleName>
       <useWrapper>false</useWrapper>
