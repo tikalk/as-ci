@@ -53,13 +53,6 @@
   </builders>
   <publishers/>
   <buildWrappers>
-    <EnvInjectBuildWrapper plugin="envinject@1.92.1">
-      <info>
-        <propertiesContent>ANDROID_DAILY_OVERRIDE=866776299a9f170bf24dd1d20e6bc43a20760636
-ANDROID_HOME=/opt/jenkins/tools/android-sdk</propertiesContent>
-        <loadFilesFromMaster>false</loadFilesFromMaster>
-      </info>
-    </EnvInjectBuildWrapper>
     <hudson.plugins.android__emulator.AndroidEmulator plugin="android-emulator@2.13.1">
       <osVersion>android-18</osVersion>
       <screenDensity>160</screenDensity>
