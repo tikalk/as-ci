@@ -61,7 +61,7 @@
       <targetAbi>armeabi-v7a</targetAbi>
       <hardwareProperties/>
       <wipeData>false</wipeData>
-      <showWindow>false</showWindow>
+      <showWindow>true</showWindow>
       <useSnapshots>false</useSnapshots>
       <deleteAfterBuild>false</deleteAfterBuild>
       <startupDelay>0</startupDelay>
