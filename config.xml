@@ -180,7 +180,9 @@
           <default>
             <comparator class="hudson.util.CaseInsensitiveComparator" reference="../../../../../../views/listView[3]/jobNames/comparator"/>
           </default>
-          <int>1</int>
+          <int>2</int>
+          <string>ANDROID_HOME</string>
+          <string>/opt/jenkins/tools/android-sdk</string>
           <string>DOCKER_REGISTRY</string>
           <string>dreg.tikalknowledge.com:5000</string>
         </tree-map>
