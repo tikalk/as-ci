@@ -39,12 +39,12 @@
   <concurrentBuild>false</concurrentBuild>
   <builders>
     <hudson.plugins.gradle.Gradle plugin="gradle@1.24">
-      <description>clean build</description>
+      <description></description>
       <switches></switches>
-      <tasks></tasks>
+      <tasks>clean build</tasks>
       <rootBuildScriptDir></rootBuildScriptDir>
       <buildFile></buildFile>
-      <gradleName>Default</gradleName>
+      <gradleName>2.4</gradleName>
       <useWrapper>false</useWrapper>
       <makeExecutable>true</makeExecutable>
       <fromRootBuildScriptDir>true</fromRootBuildScriptDir>
