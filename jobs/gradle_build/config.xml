@@ -52,5 +52,12 @@
     </hudson.plugins.gradle.Gradle>
   </builders>
   <publishers/>
-  <buildWrappers/>
+  <buildWrappers>
+    <EnvInjectBuildWrapper plugin="envinject@1.92.1">
+      <info>
+        <propertiesContent>ANDROID_DAILY_OVERRIDE=866776299a9f170bf24dd1d20e6bc43a20760636</propertiesContent>
+        <loadFilesFromMaster>false</loadFilesFromMaster>
+      </info>
+    </EnvInjectBuildWrapper>
+  </buildWrappers>
 </project>
