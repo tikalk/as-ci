@@ -44,8 +44,8 @@
       <tasks></tasks>
       <rootBuildScriptDir>app</rootBuildScriptDir>
       <buildFile></buildFile>
-      <gradleName>(Default)</gradleName>
-      <useWrapper>true</useWrapper>
+      <gradleName>Default</gradleName>
+      <useWrapper>false</useWrapper>
       <makeExecutable>true</makeExecutable>
       <fromRootBuildScriptDir>true</fromRootBuildScriptDir>
       <useWorkspaceAsHome>false</useWorkspaceAsHome>
