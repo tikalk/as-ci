@@ -45,8 +45,8 @@
       <rootBuildScriptDir>app</rootBuildScriptDir>
       <buildFile></buildFile>
       <gradleName>(Default)</gradleName>
-      <useWrapper>false</useWrapper>
-      <makeExecutable>false</makeExecutable>
+      <useWrapper>true</useWrapper>
+      <makeExecutable>true</makeExecutable>
       <fromRootBuildScriptDir>true</fromRootBuildScriptDir>
       <useWorkspaceAsHome>false</useWorkspaceAsHome>
     </hudson.plugins.gradle.Gradle>
