@@ -2,32 +2,10 @@
 <hudson.plugins.gradle.Gradle_-DescriptorImpl plugin="gradle@1.24">
   <installations>
     <hudson.plugins.gradle.GradleInstallation>
-      <name>Default</name>
-      <home></home>
-      <properties>
-        <hudson.tools.InstallSourceProperty>
-          <installers>
-            <hudson.plugins.gradle.GradleInstaller>
-              <id>2.10</id>
-            </hudson.plugins.gradle.GradleInstaller>
-          </installers>
-        </hudson.tools.InstallSourceProperty>
-      </properties>
-      <gradleHome></gradleHome>
-    </hudson.plugins.gradle.GradleInstallation>
-    <hudson.plugins.gradle.GradleInstallation>
       <name>2.4</name>
-      <home></home>
-      <properties>
-        <hudson.tools.InstallSourceProperty>
-          <installers>
-            <hudson.plugins.gradle.GradleInstaller>
-              <id>2.4</id>
-            </hudson.plugins.gradle.GradleInstaller>
-          </installers>
-        </hudson.tools.InstallSourceProperty>
-      </properties>
-      <gradleHome></gradleHome>
+      <home>/opt/jenkins/tools/gradle-2.4</home>
+      <properties/>
+      <gradleHome>/opt/jenkins/tools/gradle-2.4</gradleHome>
     </hudson.plugins.gradle.GradleInstallation>
   </installations>
 </hudson.plugins.gradle.Gradle_-DescriptorImpl>
