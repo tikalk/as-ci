@@ -55,7 +55,7 @@
   <buildWrappers>
     <EnvInjectBuildWrapper plugin="envinject@1.92.1">
       <info>
-        <propertiesContent>ANDROID_DAILY_OVERRIDE=866776299a9f170bf24dd1d20e6bc43a20760636</propertiesContent>
+        <propertiesContent>ANDROID_DAILY_OVERRIDE= 83e8a05c2f10b827eba56d30792a8dc148039fd4</propertiesContent>
         <loadFilesFromMaster>false</loadFilesFromMaster>
       </info>
     </EnvInjectBuildWrapper>
