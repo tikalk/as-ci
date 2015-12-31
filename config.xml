@@ -182,8 +182,8 @@
             <comparator class="hudson.util.CaseInsensitiveComparator"/>
           </default>
           <int>2</int>
-          <string>ANDROID_HOMEa</string>
-          <string>/workspace/android-sdk-linux</string>
+          <string>ANDROID_HOME</string>
+          <string>/opt/jenkins/tools/android-sdk</string>
           <string>DOCKER_REGISTRY</string>
           <string>dreg.tikalknowledge.com:5000</string>
         </tree-map>
