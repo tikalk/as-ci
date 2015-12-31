@@ -98,7 +98,7 @@ echo YR_VERSION=$YR_VERSION &gt; version.properties</command>
 BUILD_TO_TEST=${BUILD_NUMBER}</properties>
             </hudson.plugins.parameterizedtrigger.PredefinedBuildParameters>
           </configs>
-          <projects>yremote-sanity, </projects>
+          <projects>yremote-sanity,</projects>
           <condition>SUCCESS</condition>
           <triggerWithNoParameters>false</triggerWithNoParameters>
         </hudson.plugins.parameterizedtrigger.BuildTriggerConfig>

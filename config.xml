@@ -153,7 +153,7 @@
       <properties class="hudson.model.View$PropertyList"/>
       <jobNames>
         <comparator class="hudson.util.CaseInsensitiveComparator"/>
-        <string>gradle_build</string>
+        <string>gradle_build_emulator</string>
       </jobNames>
       <jobFilters/>
       <columns>
