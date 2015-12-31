@@ -101,8 +101,8 @@ ANDROID_DAILY_OVERRIDE= a8faa180fc282060c9b8ec88f9bdcc9072121284</propertiesCont
       <deviceLocale>en_US</deviceLocale>
       <targetAbi>armeabi-v7a</targetAbi>
       <hardwareProperties/>
-      <wipeData>true</wipeData>
-      <showWindow>true</showWindow>
+      <wipeData>false</wipeData>
+      <showWindow>false</showWindow>
       <useSnapshots>false</useSnapshots>
       <deleteAfterBuild>false</deleteAfterBuild>
       <startupDelay>0</startupDelay>
