@@ -95,7 +95,7 @@ ANDROID_DAILY_OVERRIDE= a8faa180fc282060c9b8ec88f9bdcc9072121284</propertiesCont
       </info>
     </EnvInjectBuildWrapper>
     <hudson.plugins.android__emulator.AndroidEmulator plugin="android-emulator@2.13.1">
-      <osVersion>android-18</osVersion>
+      <osVersion>android-23</osVersion>
       <screenDensity>160</screenDensity>
       <screenResolution>HVGA</screenResolution>
       <deviceLocale>en_US</deviceLocale>
