@@ -94,6 +94,10 @@ ANDROID_DAILY_OVERRIDE= a8faa180fc282060c9b8ec88f9bdcc9072121284</propertiesCont
         <loadFilesFromMaster>false</loadFilesFromMaster>
       </info>
     </EnvInjectBuildWrapper>
+    <hudson.plugins.xvnc.Xvnc plugin="xvnc@1.23">
+      <takeScreenshot>false</takeScreenshot>
+      <useXauthority>true</useXauthority>
+    </hudson.plugins.xvnc.Xvnc>
     <hudson.plugins.android__emulator.AndroidEmulator plugin="android-emulator@2.13.1">
       <osVersion>android-23</osVersion>
       <screenDensity>160</screenDensity>
