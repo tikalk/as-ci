@@ -5,5 +5,15 @@
   <maxDisplayNumber>99</maxDisplayNumber>
   <skipOnWindows>true</skipOnWindows>
   <cleanUp>false</cleanUp>
-  <allocators/>
+  <allocators>
+    <entry>
+      <string></string>
+      <hudson.plugins.xvnc.DisplayAllocator>
+        <allocatedNumbers>
+          <int>38</int>
+        </allocatedNumbers>
+        <blacklistedNumbers/>
+      </hudson.plugins.xvnc.DisplayAllocator>
+    </entry>
+  </allocators>
 </hudson.plugins.xvnc.Xvnc_-DescriptorImpl>
