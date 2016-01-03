@@ -4,7 +4,7 @@
   <minDisplayNumber>10</minDisplayNumber>
   <maxDisplayNumber>99</maxDisplayNumber>
   <skipOnWindows>true</skipOnWindows>
-  <cleanUp>false</cleanUp>
+  <cleanUp>true</cleanUp>
   <allocators>
     <entry>
       <string></string>
