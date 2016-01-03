@@ -99,10 +99,9 @@ ANDROID_DAILY_OVERRIDE= a8faa180fc282060c9b8ec88f9bdcc9072121284</propertiesCont
       <screenDensity>160</screenDensity>
       <screenResolution>HVGA</screenResolution>
       <deviceLocale>en_US</deviceLocale>
-      <targetAbi>google_apis/armeabi-v7a</targetAbi>
       <hardwareProperties/>
       <wipeData>false</wipeData>
-      <showWindow>false</showWindow>
+      <showWindow>true</showWindow>
       <useSnapshots>false</useSnapshots>
       <deleteAfterBuild>false</deleteAfterBuild>
       <startupDelay>0</startupDelay>
