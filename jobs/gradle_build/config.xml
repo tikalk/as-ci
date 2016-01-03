@@ -90,7 +90,7 @@
     <EnvInjectBuildWrapper plugin="envinject@1.92.1">
       <info>
         <propertiesContent>### USING GRADLE VERSION 2.4 AND THEREFORE NEED
-ANDROID_DAILY_OVERRIDE= a8faa180fc282060c9b8ec88f9bdcc9072121284</propertiesContent>
+ANDROID_DAILY_OVERRIDE= 6d3b16ffa3b2e515dbcc196b3938e3b8ec2852e1</propertiesContent>
         <loadFilesFromMaster>false</loadFilesFromMaster>
       </info>
     </EnvInjectBuildWrapper>
