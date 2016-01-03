@@ -9,7 +9,9 @@
     <entry>
       <string></string>
       <hudson.plugins.xvnc.DisplayAllocator>
-        <allocatedNumbers/>
+        <allocatedNumbers>
+          <int>10</int>
+        </allocatedNumbers>
         <blacklistedNumbers>
           <int>38</int>
           <int>76</int>
