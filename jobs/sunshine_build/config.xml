@@ -44,7 +44,7 @@
       <tasks>clean build</tasks>
       <rootBuildScriptDir></rootBuildScriptDir>
       <buildFile></buildFile>
-      <gradleName>2.4</gradleName>
+      <gradleName>2.10</gradleName>
       <useWrapper>false</useWrapper>
       <makeExecutable>true</makeExecutable>
       <fromRootBuildScriptDir>true</fromRootBuildScriptDir>
