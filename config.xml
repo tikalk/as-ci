@@ -78,7 +78,20 @@
   </jdks>
   <viewsTabBar class="hudson.views.DefaultViewsTabBar"/>
   <myViewsTabBar class="hudson.views.DefaultMyViewsTabBar"/>
-  <clouds/>
+  <clouds>
+    <hudson.plugins.ec2.EC2Cloud plugin="ec2@1.29">
+      <name>ec2-Tikal&apos;s EC2</name>
+      <useInstanceProfileForCredentials>true</useInstanceProfileForCredentials>
+      <accessId>AKIAIW3RGV25QQZXDR5Q</accessId>
+      <secretKey>Fe79PZ9wFdYXdo4uZJghcIKH7OhX0xglbU+XPMv+0kTSudJ/9WW97xh/UqzSZez8yLAKH5Et5CLM4X+iyF25Hw==</secretKey>
+      <privateKey>
+        <privateKey>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</privateKey>
+      </privateKey>
+      <instanceCap>2147483647</instanceCap>
+      <templates class="empty-list"/>
+      <region>us-west-2</region>
+    </hudson.plugins.ec2.EC2Cloud>
+  </clouds>
   <quietPeriod>5</quietPeriod>
   <scmCheckoutRetryCount>0</scmCheckoutRetryCount>
   <views>
