@@ -52,14 +52,13 @@
     <entry>
       <string>ubuntu-g2.2xlarge (i-6ca740ab)</string>
       <hudson.plugins.xvnc.DisplayAllocator>
-        <allocatedNumbers>
-          <int>47</int>
-        </allocatedNumbers>
+        <allocatedNumbers/>
         <blacklistedNumbers>
           <int>39</int>
           <int>66</int>
           <int>29</int>
           <int>46</int>
+          <int>47</int>
           <int>28</int>
           <int>31</int>
         </blacklistedNumbers>
