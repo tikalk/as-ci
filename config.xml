@@ -93,7 +93,7 @@
           <ami>ami-5189a661</ami>
           <description>ubuntu-g2.2xlarge</description>
           <zone></zone>
-          <securityGroups>jenkinsSlaves,default</securityGroups>
+          <securityGroups>jenkinsSlaves, default</securityGroups>
           <remoteFS>/home/ubuntu</remoteFS>
           <type>G22xlarge</type>
           <ebsOptimized>false</ebsOptimized>
