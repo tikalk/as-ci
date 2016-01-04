@@ -48,7 +48,7 @@
       <useWrapper>false</useWrapper>
       <makeExecutable>true</makeExecutable>
       <fromRootBuildScriptDir>true</fromRootBuildScriptDir>
-      <useWorkspaceAsHome>true</useWorkspaceAsHome>
+      <useWorkspaceAsHome>false</useWorkspaceAsHome>
     </hudson.plugins.gradle.Gradle>
   </builders>
   <publishers>
