@@ -113,7 +113,7 @@
           <instanceCap>2147483647</instanceCap>
           <stopOnTerminate>true</stopOnTerminate>
           <usePrivateDnsName>false</usePrivateDnsName>
-          <associatePublicIp>true</associatePublicIp>
+          <associatePublicIp>false</associatePublicIp>
           <useDedicatedTenancy>false</useDedicatedTenancy>
           <amiType class="hudson.plugins.ec2.UnixData">
             <rootCommandPrefix></rootCommandPrefix>
