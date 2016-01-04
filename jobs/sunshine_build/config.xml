@@ -95,9 +95,5 @@ ANDROID_DAILY_OVERRIDE= 9971b4ee06973b41cb7796ddc6b12488e715f8e3</propertiesCont
         <loadFilesFromMaster>false</loadFilesFromMaster>
       </info>
     </EnvInjectBuildWrapper>
-    <hudson.plugins.xvnc.Xvnc plugin="xvnc@1.23">
-      <takeScreenshot>false</takeScreenshot>
-      <useXauthority>true</useXauthority>
-    </hudson.plugins.xvnc.Xvnc>
   </buildWrappers>
 </project>
