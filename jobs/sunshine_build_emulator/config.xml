@@ -106,12 +106,7 @@ LIBGL_DEBUG=verbose</propertiesContent>
       <deviceLocale>en_US</deviceLocale>
       <targetAbi>default/armeabi-v7a</targetAbi>
       <sdCardSize>256M</sdCardSize>
-      <hardwareProperties>
-        <hudson.plugins.android__emulator.AndroidEmulator_-HardwareProperty>
-          <key></key>
-          <value></value>
-        </hudson.plugins.android__emulator.AndroidEmulator_-HardwareProperty>
-      </hardwareProperties>
+      <hardwareProperties/>
       <wipeData>false</wipeData>
       <showWindow>true</showWindow>
       <useSnapshots>false</useSnapshots>
