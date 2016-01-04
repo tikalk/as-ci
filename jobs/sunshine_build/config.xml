@@ -45,7 +45,7 @@
       <rootBuildScriptDir></rootBuildScriptDir>
       <buildFile></buildFile>
       <gradleName>2.4</gradleName>
-      <useWrapper>true</useWrapper>
+      <useWrapper>false</useWrapper>
       <makeExecutable>true</makeExecutable>
       <fromRootBuildScriptDir>true</fromRootBuildScriptDir>
       <useWorkspaceAsHome>true</useWorkspaceAsHome>
