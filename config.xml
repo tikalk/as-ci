@@ -99,7 +99,100 @@
           <ebsOptimized>false</ebsOptimized>
           <labels>ubuntu gpu</labels>
           <mode>EXCLUSIVE</mode>
-          <initScript></initScript>
+          <initScript>#!/bin/bash
+
+# chkconfig: 2345 95 05
+# description: MY Application
+
+# Source function library.
+. /etc/init.d/functions
+
+RETVAL=0
+prog=&quot;myserver&quot;
+PIDFILE=/var/run/$prog.pid
+LOCKFILE=/var/lock/subsys/$prog
+PATH=/sbin:/usr/sbin:/bin:/usr/bin
+JAVA=/usr/bin/java
+DESC=&quot;MY Application&quot;
+DAEMON=$JAVA
+DAEMON_HOME=&quot;/home/ganesh/MyServer/&quot;
+JAR=$DAEMON_HOME/MyServer.jar
+DAEMON_ARGS=&quot;-Xms512m -Xmx4112m -jar $JAR&quot;
+SCRIPTNAME=/etc/init.d/myserver
+#the user that will run the script
+USER=root
+
+#echo &quot;All value sets&quot;
+
+start() {
+    if [ -f $PIDFILE ]; then
+        PID=`cat $PIDFILE`
+        if [ -z &quot;`pgrep $PID`&quot; ] &amp;&amp; [ &quot;$PID&quot; != &quot;`ps aux|grep -vE &apos;grep|runuser|bash&apos;|grep -w &quot;$JAR&quot;|awk &apos;{print $2}&apos;`&quot; ]; then
+            printf &quot;%s\n&quot; &quot;Process dead but pidfile exists&quot;
+        else
+            printf &quot;$prog is already running!\n&quot;
+        fi
+    else
+        printf &quot;%-50s&quot; &quot;Starting $prog ...&quot;
+        cd $DAEMON_HOME
+        daemon --user $USER $DAEMON $DAEMON_ARGS &gt;/dev/null 2&gt;&amp;1 &amp;
+        sleep 5
+        PID=`ps aux|grep -vE &apos;grep|runuser|bash&apos;|grep -w &quot;$JAR&quot;|awk &apos;{print $2}&apos;`
+        if [ -z &quot;$PID&quot; ]; then
+            printf &quot;[ \e[31mFAIL\033[0m ]\n&quot;
+        else
+            echo $PID &gt; $PIDFILE
+            printf &quot;[ \e[32mOK\033[0m ]\n&quot;
+        fi
+    fi
+}
+
+stop() {
+    printf &quot;%-50s&quot; &quot;Shutting down $prog:&quot;
+    if [ -f $PIDFILE ]; then
+        PID=`cat $PIDFILE`
+        kill -HUP $PID 2&gt;/dev/null
+        printf &quot;[ \e[32mOK\033[0m ]\n&quot;
+        rm -f $PIDFILE
+    else
+        printf &quot;[ \e[31mFAIL\033[0m ]\n&quot; 
+    fi
+}
+
+check_status() {
+    printf &quot;%-50s&quot; &quot;Checking $prog ...&quot;
+    if [ -f $PIDFILE ]; then
+        PID=`cat $PIDFILE`
+        if [ -z &quot;`pgrep $PID`&quot; ] &amp;&amp; [ &quot;$PID&quot; != &quot;`ps aux|grep -vE &apos;grep|runuser|bash&apos;|grep -w &quot;$JAR&quot;|awk &apos;{print $2}&apos;`&quot; ]; then
+            printf &quot;%s\n&quot; &quot;Process dead but pidfile exists&quot;
+        else
+            printf &quot;[ \e[32mRUNNING\033[0m ]\n&quot;
+        fi
+    else
+        printf &quot;[ \e[31mSTOPPED\033[0m ]\n&quot;
+    fi
+}
+
+case &quot;$1&quot; in
+    start)
+        start
+        ;;
+    stop)
+        stop
+        ;;
+    status)
+        check_status
+        ;;
+    restart)
+        stop
+        start
+        ;;
+    *)
+        echo &quot;Usage: $prog {start|stop|status|restart}&quot;
+        exit 1
+        ;;
+esac
+exit 1</initScript>
           <tmpDir></tmpDir>
           <userData></userData>
           <numExecutors>4</numExecutors>
@@ -113,14 +206,14 @@
           <instanceCap>2147483647</instanceCap>
           <stopOnTerminate>true</stopOnTerminate>
           <usePrivateDnsName>false</usePrivateDnsName>
-          <associatePublicIp>false</associatePublicIp>
+          <associatePublicIp>true</associatePublicIp>
           <useDedicatedTenancy>false</useDedicatedTenancy>
           <amiType class="hudson.plugins.ec2.UnixData">
             <rootCommandPrefix></rootCommandPrefix>
             <sshPort>22</sshPort>
           </amiType>
           <launchTimeout>2147483647</launchTimeout>
-          <connectBySSHProcess>false</connectBySSHProcess>
+          <connectBySSHProcess>true</connectBySSHProcess>
         </hudson.plugins.ec2.SlaveTemplate>
       </templates>
       <region>us-west-2</region>
