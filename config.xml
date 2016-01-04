@@ -101,7 +101,14 @@
           <mode>EXCLUSIVE</mode>
           <initScript></initScript>
           <tmpDir></tmpDir>
-          <userData></userData>
+          <userData>#cloud-config
+repo_update: true
+repo_upgrade: all
+
+packages:
+ - wget
+ - git
+ - openjdk-7-jdk</userData>
           <numExecutors>4</numExecutors>
           <remoteAdmin>ubuntu</remoteAdmin>
           <jvmopts></jvmopts>
