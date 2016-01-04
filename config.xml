@@ -81,14 +81,48 @@
   <clouds>
     <hudson.plugins.ec2.EC2Cloud plugin="ec2@1.29">
       <name>ec2-Tikal&apos;s EC2</name>
-      <useInstanceProfileForCredentials>true</useInstanceProfileForCredentials>
+      <useInstanceProfileForCredentials>false</useInstanceProfileForCredentials>
       <accessId>AKIAIW3RGV25QQZXDR5Q</accessId>
       <secretKey>Fe79PZ9wFdYXdo4uZJghcIKH7OhX0xglbU+XPMv+0kTSudJ/9WW97xh/UqzSZez8yLAKH5Et5CLM4X+iyF25Hw==</secretKey>
       <privateKey>
-        <privateKey>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</privateKey>
+        <privateKey>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</privateKey>
       </privateKey>
       <instanceCap>2147483647</instanceCap>
-      <templates class="empty-list"/>
+      <templates>
+        <hudson.plugins.ec2.SlaveTemplate>
+          <ami>ami-5189a661</ami>
+          <description>ubuntu for Android emulator</description>
+          <zone></zone>
+          <securityGroups></securityGroups>
+          <remoteFS>/</remoteFS>
+          <type>G22xlarge</type>
+          <ebsOptimized>false</ebsOptimized>
+          <labels>ubuntu android emulator</labels>
+          <mode>EXCLUSIVE</mode>
+          <initScript></initScript>
+          <tmpDir></tmpDir>
+          <userData></userData>
+          <numExecutors>8</numExecutors>
+          <remoteAdmin>ubuntu</remoteAdmin>
+          <jvmopts></jvmopts>
+          <subnetId></subnetId>
+          <idleTerminationMinutes>30</idleTerminationMinutes>
+          <iamInstanceProfile></iamInstanceProfile>
+          <useEphemeralDevices>false</useEphemeralDevices>
+          <customDeviceMapping></customDeviceMapping>
+          <instanceCap>2147483647</instanceCap>
+          <stopOnTerminate>false</stopOnTerminate>
+          <usePrivateDnsName>false</usePrivateDnsName>
+          <associatePublicIp>true</associatePublicIp>
+          <useDedicatedTenancy>false</useDedicatedTenancy>
+          <amiType class="hudson.plugins.ec2.UnixData">
+            <rootCommandPrefix></rootCommandPrefix>
+            <sshPort></sshPort>
+          </amiType>
+          <launchTimeout>2147483647</launchTimeout>
+          <connectBySSHProcess>false</connectBySSHProcess>
+        </hudson.plugins.ec2.SlaveTemplate>
+      </templates>
       <region>us-west-2</region>
     </hudson.plugins.ec2.EC2Cloud>
   </clouds>
