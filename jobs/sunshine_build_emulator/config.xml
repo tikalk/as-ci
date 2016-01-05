@@ -38,7 +38,7 @@
   <jdk>(System)</jdk>
   <triggers>
     <hudson.triggers.TimerTrigger>
-      <spec>H/7 * * * *</spec>
+      <spec>#H/7 * * * *</spec>
     </hudson.triggers.TimerTrigger>
   </triggers>
   <concurrentBuild>false</concurrentBuild>
