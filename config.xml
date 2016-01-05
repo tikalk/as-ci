@@ -105,6 +105,7 @@ if [ ! -x &quot;$JAVA&quot; ]; then
    sudo apt-get update &amp;&amp; sudo apt-get install -y openjdk-7-jre ca-certificates-java tzdata-java icedtea-7-jre-jamvm openjdk-7-jre-headless openjdk-7-jdk wget git xfce4 xfce4-goodies tightvncserver
 fi
 
+set -x
 
 # Create new jenkins User and set password
 sudo useradd -m jenkins
@@ -131,7 +132,9 @@ expect &quot;Would you like to enter a view-only password (y/n)?&quot;
 send &quot;no\r&quot;
 expect eof
 exit
-EOF</initScript>
+EOF
+
+set +x</initScript>
           <tmpDir></tmpDir>
           <userData></userData>
           <numExecutors>2</numExecutors>
