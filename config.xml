@@ -92,11 +92,11 @@
         <hudson.plugins.ec2.SlaveTemplate>
           <ami>ami-5189a661</ami>
           <description>ubuntu-g2.2xlarge</description>
-          <zone></zone>
+          <zone>us-west-2a</zone>
           <securityGroups>docker-workshop</securityGroups>
           <remoteFS>/home/ubuntu</remoteFS>
           <type>G22xlarge</type>
-          <ebsOptimized>false</ebsOptimized>
+          <ebsOptimized>true</ebsOptimized>
           <labels>android_slave</labels>
           <mode>EXCLUSIVE</mode>
           <initScript>export JAVA=&quot;/usr/bin/java&quot;
