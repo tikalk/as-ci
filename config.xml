@@ -129,7 +129,7 @@ fi</initScript>
             <sshPort>22</sshPort>
           </amiType>
           <launchTimeout>2147483647</launchTimeout>
-          <connectBySSHProcess>false</connectBySSHProcess>
+          <connectBySSHProcess>true</connectBySSHProcess>
         </hudson.plugins.ec2.SlaveTemplate>
       </templates>
       <region>us-west-2</region>
