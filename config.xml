@@ -126,7 +126,7 @@ fi</initScript>
           <useDedicatedTenancy>false</useDedicatedTenancy>
           <amiType class="hudson.plugins.ec2.UnixData">
             <rootCommandPrefix></rootCommandPrefix>
-            <sshPort>22</sshPort>
+            <sshPort></sshPort>
           </amiType>
           <launchTimeout>2147483647</launchTimeout>
           <connectBySSHProcess>true</connectBySSHProcess>
