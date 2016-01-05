@@ -93,7 +93,7 @@
           <ami>ami-5189a661</ami>
           <description>ubuntu-g2.2xlarge</description>
           <zone></zone>
-          <securityGroups>jenkinsSlaves</securityGroups>
+          <securityGroups>docker-workshop. v===</securityGroups>
           <remoteFS>/home/ubuntu</remoteFS>
           <type>G22xlarge</type>
           <ebsOptimized>false</ebsOptimized>
@@ -101,17 +101,10 @@
           <mode>EXCLUSIVE</mode>
           <initScript>export JAVA=&quot;/usr/bin/java&quot;
 if [ ! -x &quot;$JAVA&quot; ]; then
-   sudo apt-get update &amp;&amp; sudo apt-get install -y openjdk-7-jre ca-certificates-java tzdata-java icedtea-7-jre-jamvm openjdk-7-jre-headless openjdk-7-jdk
+   sudo apt-get update &amp;&amp; sudo apt-get install -y openjdk-7-jre ca-certificates-java tzdata-java icedtea-7-jre-jamvm openjdk-7-jre-headless openjdk-7-jdk wget git
 fi</initScript>
           <tmpDir></tmpDir>
-          <userData>#cloud-config
-repo_update: true
-repo_upgrade: all
-
-packages:
- - wget
- - git
- - openjdk-7-jdk</userData>
+          <userData></userData>
           <numExecutors>2</numExecutors>
           <remoteAdmin>ubuntu</remoteAdmin>
           <jvmopts></jvmopts>
