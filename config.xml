@@ -96,7 +96,7 @@
           <securityGroups>docker-workshop</securityGroups>
           <remoteFS>/home/ubuntu</remoteFS>
           <type>G22xlarge</type>
-          <ebsOptimized>true</ebsOptimized>
+          <ebsOptimized>false</ebsOptimized>
           <labels>android_slave</labels>
           <mode>EXCLUSIVE</mode>
           <initScript>export JAVA=&quot;/usr/bin/java&quot;
@@ -121,12 +121,12 @@ fi</initScript>
               <value>jenkins</value>
             </hudson.plugins.ec2.EC2Tag>
           </tags>
-          <usePrivateDnsName>true</usePrivateDnsName>
+          <usePrivateDnsName>false</usePrivateDnsName>
           <associatePublicIp>false</associatePublicIp>
           <useDedicatedTenancy>false</useDedicatedTenancy>
           <amiType class="hudson.plugins.ec2.UnixData">
             <rootCommandPrefix></rootCommandPrefix>
-            <sshPort></sshPort>
+            <sshPort>22</sshPort>
           </amiType>
           <launchTimeout>2147483647</launchTimeout>
           <connectBySSHProcess>true</connectBySSHProcess>
