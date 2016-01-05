@@ -104,6 +104,8 @@ export JAVA=&quot;/usr/bin/java&quot;
 if [ ! -x &quot;$JAVA&quot; ]; then
    sudo apt-get update &amp;&amp; sudo apt-get install -y openjdk-7-jre ca-certificates-java tzdata-java icedtea-7-jre-jamvm openjdk-7-jre-headless openjdk-7-jdk wget git xfce4 xfce4-goodies tightvncserver
 fi
+
+
 # Create new jenkins User and set password
 sudo useradd -m jenkins
 echo &apos;jenkins:1234qweR&apos; | sudo chpasswd
@@ -115,12 +117,12 @@ sudo chmod -R 0777 /home/ubuntu/.vnc/
 
 sudo -u jenkins -s
 
-
+export HOME=/home/jenkins
 prog=/usr/bin/vncserver
 mypass=&quot;1234qweR&quot;
 
 /usr/bin/expect &lt;&lt;EOF
-spawn sudo &quot;$prog&quot;
+spawn &quot;$prog&quot;
 expect &quot;Password:&quot;
 send &quot;$mypass\r&quot;
 expect &quot;Verify:&quot;
