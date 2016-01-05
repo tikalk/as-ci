@@ -96,6 +96,7 @@
         <allocatedNumbers>
           <int>96</int>
           <int>92</int>
+          <int>27</int>
         </allocatedNumbers>
         <blacklistedNumbers>
           <int>85</int>
