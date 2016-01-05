@@ -99,7 +99,7 @@
           <ebsOptimized>false</ebsOptimized>
           <labels>ubuntu gpu</labels>
           <mode>EXCLUSIVE</mode>
-          <initScript>sudo apt-get install openjdk-7-jdk</initScript>
+          <initScript>sudo apt-get -y install openjdk-7-jdk</initScript>
           <tmpDir></tmpDir>
           <userData>#cloud-config
 repo_update: true
