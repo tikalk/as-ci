@@ -115,13 +115,12 @@
     <entry>
       <string>ubuntu-g2.2xlarge (i-b432d273)</string>
       <hudson.plugins.xvnc.DisplayAllocator>
-        <allocatedNumbers>
-          <int>15</int>
-        </allocatedNumbers>
+        <allocatedNumbers/>
         <blacklistedNumbers>
           <int>10</int>
           <int>13</int>
           <int>14</int>
+          <int>15</int>
           <int>19</int>
           <int>18</int>
           <int>21</int>
