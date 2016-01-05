@@ -99,7 +99,10 @@
           <ebsOptimized>false</ebsOptimized>
           <labels>android_slave</labels>
           <mode>EXCLUSIVE</mode>
-          <initScript>sudo apt-get -y install openjdk-7-jdk</initScript>
+          <initScript>export JAVA=&quot;/usr/bin/java&quot;
+if [ ! -x &quot;$JAVA&quot; ]; then
+   sudo apt-get update &amp;&amp; sudo apt-get install -y openjdk-7-jre ca-certificates-java tzdata-java icedtea-7-jre-jamvm openjdk-7-jre-headless openjdk-7-jdk
+fi</initScript>
           <tmpDir></tmpDir>
           <userData>#cloud-config
 repo_update: true
