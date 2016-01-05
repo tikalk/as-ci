@@ -96,11 +96,11 @@
         <allocatedNumbers>
           <int>96</int>
           <int>92</int>
-          <int>61</int>
         </allocatedNumbers>
         <blacklistedNumbers>
           <int>69</int>
           <int>48</int>
+          <int>61</int>
         </blacklistedNumbers>
       </hudson.plugins.xvnc.DisplayAllocator>
     </entry>
