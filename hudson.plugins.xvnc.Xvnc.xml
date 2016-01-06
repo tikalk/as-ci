@@ -295,7 +295,6 @@
       <hudson.plugins.xvnc.DisplayAllocator>
         <allocatedNumbers>
           <int>70</int>
-          <int>81</int>
         </allocatedNumbers>
         <blacklistedNumbers/>
       </hudson.plugins.xvnc.DisplayAllocator>
