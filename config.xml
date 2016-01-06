@@ -184,7 +184,7 @@ set +x</initScript>
           <idleTerminationMinutes>10</idleTerminationMinutes>
           <iamInstanceProfile></iamInstanceProfile>
           <useEphemeralDevices>false</useEphemeralDevices>
-          <customDeviceMapping></customDeviceMapping>
+          <customDeviceMapping>/dev/sddd=:50</customDeviceMapping>
           <instanceCap>1</instanceCap>
           <stopOnTerminate>false</stopOnTerminate>
           <tags>
