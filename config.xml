@@ -102,7 +102,7 @@
           <initScript>#!/bin/sh
 export JAVA=&quot;/usr/bin/java&quot;
 if [ ! -x &quot;$JAVA&quot; ]; then
-   sudo apt-get update &amp;&amp; sudo apt-get install -y openjdk-7-jre ca-certificates-java tzdata-java icedtea-7-jre-jamvm openjdk-7-jre-headless openjdk-7-jdk wget git xfce4 xfce4-goodies tightvncserver expect
+   sudo apt-get update &amp;&amp; sudo apt-get install -y openjdk-7-jre ca-certificates-java tzdata-java icedtea-7-jre-jamvm openjdk-7-jre-headless openjdk-7-jdk wget git xfce4 xfce4-goodies tightvncserver expect ia32-libs-sdl
 fi
 
 set -x
