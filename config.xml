@@ -103,6 +103,17 @@
 
 set -x
 
+pwd
+whoami
+id
+groups
+
+set +X
+echo ==========================================================
+echo ==============           1              ==================
+echo ==========================================================
+set -x
+
 sudo dpkg --add-architecture i386
 sudo apt-get update 
 sudo apt-get install ia32-libs
@@ -111,6 +122,14 @@ sudo apt-get install ia32-libs
 #export current_host=$(&apos;hostname&apos;)
 #export local_host_ip=&quot;127.0.0.1&quot;
 #sed -i &quot;$local_host_ip	$current_host&quot; /etc/hosts
+
+
+
+set +X
+echo ==========================================================
+echo ==============           2              ==================
+echo ==========================================================
+set -x
 
 #### Install packages just on clean Envirnment
 export JAVA=&quot;/usr/bin/java&quot;
@@ -132,9 +151,12 @@ fi
 
 #sudo -u jenkins -s
 
-#whoami
-#id
-#groups
+
+set +X
+echo ==========================================================
+echo ==============           3              ==================
+echo ==========================================================
+set -x
 
 prog=/usr/bin/vncserver
 mypass=&quot;1234qweR&quot;
