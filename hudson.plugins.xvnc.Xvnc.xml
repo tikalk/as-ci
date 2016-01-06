@@ -126,6 +126,15 @@
       </hudson.plugins.xvnc.DisplayAllocator>
     </entry>
     <entry>
+      <string>ubuntu-g2.2xlarge (i-3ccf22fb)</string>
+      <hudson.plugins.xvnc.DisplayAllocator>
+        <allocatedNumbers>
+          <int>86</int>
+        </allocatedNumbers>
+        <blacklistedNumbers/>
+      </hudson.plugins.xvnc.DisplayAllocator>
+    </entry>
+    <entry>
       <string>ubuntu-g2.2xlarge (i-3510f2f2)</string>
       <hudson.plugins.xvnc.DisplayAllocator>
         <allocatedNumbers/>
