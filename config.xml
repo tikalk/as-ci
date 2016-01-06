@@ -183,8 +183,8 @@ set +x</initScript>
           <subnetId>subnet-d4a79db1</subnetId>
           <idleTerminationMinutes>10</idleTerminationMinutes>
           <iamInstanceProfile></iamInstanceProfile>
-          <useEphemeralDevices>false</useEphemeralDevices>
-          <customDeviceMapping>/dev/sddd=:50</customDeviceMapping>
+          <useEphemeralDevices>true</useEphemeralDevices>
+          <customDeviceMapping></customDeviceMapping>
           <instanceCap>1</instanceCap>
           <stopOnTerminate>false</stopOnTerminate>
           <tags>
