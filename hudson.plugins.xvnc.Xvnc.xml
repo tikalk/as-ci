@@ -19,10 +19,10 @@
           <int>76</int>
           <int>77</int>
           <int>10</int>
-          <int>79</int>
           <int>11</int>
-          <int>72</int>
+          <int>79</int>
           <int>12</int>
+          <int>72</int>
           <int>13</int>
           <int>85</int>
           <int>16</int>
@@ -50,6 +50,47 @@
       </hudson.plugins.xvnc.DisplayAllocator>
     </entry>
     <entry>
+      <string>ubuntu-g2.2xlarge (i-6ca740ab)</string>
+      <hudson.plugins.xvnc.DisplayAllocator>
+        <allocatedNumbers/>
+        <blacklistedNumbers>
+          <int>65</int>
+          <int>66</int>
+          <int>78</int>
+          <int>11</int>
+          <int>79</int>
+          <int>72</int>
+          <int>75</int>
+          <int>17</int>
+          <int>19</int>
+          <int>87</int>
+          <int>86</int>
+          <int>81</int>
+          <int>93</int>
+          <int>24</int>
+          <int>95</int>
+          <int>29</int>
+          <int>28</int>
+          <int>88</int>
+          <int>31</int>
+          <int>91</int>
+          <int>35</int>
+          <int>38</int>
+          <int>98</int>
+          <int>39</int>
+          <int>99</int>
+          <int>36</int>
+          <int>97</int>
+          <int>46</int>
+          <int>47</int>
+          <int>51</int>
+          <int>49</int>
+          <int>58</int>
+          <int>63</int>
+        </blacklistedNumbers>
+      </hudson.plugins.xvnc.DisplayAllocator>
+    </entry>
+    <entry>
       <string>ubuntu-g2.2xlarge (i-640fefa3)</string>
       <hudson.plugins.xvnc.DisplayAllocator>
         <allocatedNumbers/>
@@ -68,55 +109,14 @@
           <int>48</int>
           <int>55</int>
           <int>20</int>
-          <int>23</int>
           <int>83</int>
-          <int>25</int>
+          <int>23</int>
           <int>59</int>
-          <int>24</int>
+          <int>25</int>
           <int>92</int>
+          <int>24</int>
           <int>56</int>
           <int>28</int>
-        </blacklistedNumbers>
-      </hudson.plugins.xvnc.DisplayAllocator>
-    </entry>
-    <entry>
-      <string>ubuntu-g2.2xlarge (i-6ca740ab)</string>
-      <hudson.plugins.xvnc.DisplayAllocator>
-        <allocatedNumbers/>
-        <blacklistedNumbers>
-          <int>65</int>
-          <int>66</int>
-          <int>78</int>
-          <int>79</int>
-          <int>11</int>
-          <int>72</int>
-          <int>75</int>
-          <int>17</int>
-          <int>87</int>
-          <int>19</int>
-          <int>86</int>
-          <int>81</int>
-          <int>93</int>
-          <int>24</int>
-          <int>95</int>
-          <int>29</int>
-          <int>28</int>
-          <int>88</int>
-          <int>31</int>
-          <int>91</int>
-          <int>35</int>
-          <int>38</int>
-          <int>98</int>
-          <int>99</int>
-          <int>39</int>
-          <int>36</int>
-          <int>97</int>
-          <int>46</int>
-          <int>47</int>
-          <int>51</int>
-          <int>49</int>
-          <int>58</int>
-          <int>63</int>
         </blacklistedNumbers>
       </hudson.plugins.xvnc.DisplayAllocator>
     </entry>
@@ -128,16 +128,16 @@
           <int>92</int>
         </allocatedNumbers>
         <blacklistedNumbers>
-          <int>51</int>
           <int>85</int>
+          <int>51</int>
           <int>69</int>
           <int>48</int>
-          <int>36</int>
           <int>83</int>
+          <int>36</int>
           <int>67</int>
           <int>27</int>
-          <int>44</int>
           <int>61</int>
+          <int>44</int>
           <int>45</int>
         </blacklistedNumbers>
       </hudson.plugins.xvnc.DisplayAllocator>
@@ -147,15 +147,15 @@
       <hudson.plugins.xvnc.DisplayAllocator>
         <allocatedNumbers/>
         <blacklistedNumbers>
+          <int>68</int>
+          <int>48</int>
+          <int>99</int>
           <int>20</int>
+          <int>92</int>
+          <int>43</int>
           <int>27</int>
           <int>29</int>
-          <int>43</int>
-          <int>48</int>
-          <int>68</int>
           <int>73</int>
-          <int>92</int>
-          <int>99</int>
         </blacklistedNumbers>
       </hudson.plugins.xvnc.DisplayAllocator>
     </entry>
