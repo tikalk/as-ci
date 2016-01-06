@@ -4,7 +4,11 @@
     <hudson.plugins.gradle.GradleInstallation>
       <name>2.4</name>
       <home>/opt/jenkins/tools/gradle-2.4</home>
-      <properties/>
+      <properties>
+        <hudson.tools.InstallSourceProperty>
+          <installers/>
+        </hudson.tools.InstallSourceProperty>
+      </properties>
       <gradleHome>/opt/jenkins/tools/gradle-2.4</gradleHome>
     </hudson.plugins.gradle.GradleInstallation>
     <hudson.plugins.gradle.GradleInstallation>

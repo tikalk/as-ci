@@ -49,7 +49,7 @@
         <hudson.tools.InstallSourceProperty>
           <installers>
             <hudson.tools.JDKInstaller>
-              <id>jdk-8u65-oth-JPR</id>
+              <id>jdk-8u66-oth-JPR</id>
               <acceptLicense>true</acceptLicense>
             </hudson.tools.JDKInstaller>
           </installers>
@@ -63,7 +63,7 @@
         <hudson.tools.InstallSourceProperty>
           <installers>
             <hudson.tools.JDKInstaller>
-              <id>jdk-8u66-oth-JPR</id>
+              <id></id>
               <acceptLicense>true</acceptLicense>
             </hudson.tools.JDKInstaller>
             <hudson.tools.CommandInstaller>
@@ -80,7 +80,7 @@
   <myViewsTabBar class="hudson.views.DefaultMyViewsTabBar"/>
   <clouds>
     <hudson.plugins.ec2.EC2Cloud plugin="ec2@1.29">
-      <name>ec2-Tikal&apos;s EC2</name>
+      <name>ec2-US-WEST-2</name>
       <useInstanceProfileForCredentials>false</useInstanceProfileForCredentials>
       <accessId>AKIAIW3RGV25QQZXDR5Q</accessId>
       <secretKey>Fe79PZ9wFdYXdo4uZJghcIKH7OhX0xglbU+XPMv+0kTSudJ/9WW97xh/UqzSZez8yLAKH5Et5CLM4X+iyF25Hw==</secretKey>
@@ -91,62 +91,44 @@
       <templates>
         <hudson.plugins.ec2.SlaveTemplate>
           <ami>ami-5189a661</ami>
-          <description>ubuntu-g2.2xlarge</description>
+          <description>ubuntu.14.04-g2.2xlarge</description>
           <zone>us-west-2a</zone>
           <securityGroups>docker-workshop</securityGroups>
-          <remoteFS>/mnt</remoteFS>
+          <remoteFS>/home/ubuntu</remoteFS>
           <type>G22xlarge</type>
           <ebsOptimized>false</ebsOptimized>
           <labels>android_slave</labels>
           <mode>EXCLUSIVE</mode>
           <initScript>#!/bin/sh
 
-set +x
-echo ====================================
-echo =============== 1 ==================
-echo ====================================
-set -x
-
-sudo chmod 0777 /mnt
-
-
-set +x
-echo ====================================
-echo =============== 2 ==================
-echo ====================================
-set -x
-
-sudo apt-get update 
-sudo apt-get install -y expect
-
-#### Prevent the error &quot;unable to resolve host....&quot;
-#export current_host=$(&apos;hostname&apos;)
-#export local_host_ip=&quot;127.0.0.1&quot;
-#sed -i &quot;$local_host_ip	$current_host&quot; /etc/hosts
-
-
-
-set +x
-echo ====================================
-echo =============== 3 ==================
-echo ====================================
-set -x
-
-#### Install packages just on clean Envirnment
-export JAVA=&quot;/usr/bin/java&quot;
-if [ ! -x &quot;$JAVA&quot; ]; then
-   sudo apt-get update &amp;&amp; sudo apt-get install -y openjdk-7-jre ca-certificates-java tzdata-java icedtea-7-jre-jamvm openjdk-7-jre-headless openjdk-7-jdk wget git xfce4 xfce4-goodies tightvncserver
-fi
-
 sudo dpkg --add-architecture i386
 sudo apt-get update 
-sudo apt-get install -y libc6:i386 libncurses5:i386 libstdc++6:i386
+sudo apt-get install ia32-libs
 
-set +x
-echo ====================================
-echo =============== 4 ==================
-echo ====================================
+export JAVA=&quot;/usr/bin/java&quot;
+if [ ! -x &quot;$JAVA&quot; ]; then
+   sudo apt-get update &amp;&amp; sudo apt-get install -y openjdk-7-jre ca-certificates-java tzdata-java icedtea-7-jre-jamvm openjdk-7-jre-headless openjdk-7-jdk wget git xfce4 xfce4-goodies tightvncserver expect ia32-libs-sdl
+fi
+
 set -x
+
+# Create new jenkins User and set password
+sudo useradd jenkins -d /home/ubuntu
+
+# Add the user jenkins to the sudo group so no password will be needed
+sudo usermod -a -G sudo jenkins
+
+echo &apos;jenkins:1234qweR&apos; | sudo chpasswd
+
+# Set vncserver password for current user
+
+sudo chmod -R 0777 /home/ubuntu/.vnc/
+
+sudo -u jenkins -s
+
+whoami
+id
+groups
 
 prog=/usr/bin/vncserver
 mypass=&quot;1234qweR&quot;
@@ -172,9 +154,9 @@ set +x</initScript>
           <subnetId>subnet-d4a79db1</subnetId>
           <idleTerminationMinutes>10</idleTerminationMinutes>
           <iamInstanceProfile></iamInstanceProfile>
-          <useEphemeralDevices>true</useEphemeralDevices>
+          <useEphemeralDevices>false</useEphemeralDevices>
           <customDeviceMapping></customDeviceMapping>
-          <instanceCap>1</instanceCap>
+          <instanceCap>2147483647</instanceCap>
           <stopOnTerminate>false</stopOnTerminate>
           <tags>
             <hudson.plugins.ec2.EC2Tag>

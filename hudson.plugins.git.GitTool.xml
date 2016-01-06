@@ -4,11 +4,7 @@
     <hudson.plugins.git.GitTool>
       <name>Default</name>
       <home>git</home>
-      <properties>
-        <hudson.tools.InstallSourceProperty>
-          <installers/>
-        </hudson.tools.InstallSourceProperty>
-      </properties>
+      <properties/>
     </hudson.plugins.git.GitTool>
   </installations>
 </hudson.plugins.git.GitTool_-DescriptorImpl>
