@@ -94,7 +94,7 @@
           <description>ubuntu-g2.2xlarge</description>
           <zone>us-west-2a</zone>
           <securityGroups>docker-workshop</securityGroups>
-          <remoteFS>/home/ubuntu</remoteFS>
+          <remoteFS>/mnt</remoteFS>
           <type>G22xlarge</type>
           <ebsOptimized>false</ebsOptimized>
           <labels>android_slave</labels>
@@ -118,6 +118,8 @@ sudo apt-get install -y expect
 sudo dpkg --add-architecture i386
 sudo apt-get update 
 sudo apt-get install -y libc6:i386 libncurses5:i386 libstdc++6:i386
+
+sudo chmod 0777 /mnt
 
 #### Prevent the error &quot;unable to resolve host....&quot;
 #export current_host=$(&apos;hostname&apos;)
