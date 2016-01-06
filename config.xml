@@ -90,7 +90,7 @@
       <instanceCap>2147483647</instanceCap>
       <templates>
         <hudson.plugins.ec2.SlaveTemplate>
-          <ami>ami-4d46582c</ami>
+          <ami>ami-315f4850</ami>
           <description>ubuntu.14.04-g2.2xlarge</description>
           <zone>us-west-2a</zone>
           <securityGroups>docker-workshop</securityGroups>
