@@ -147,9 +147,7 @@
     <entry>
       <string>ubuntu-g2.2xlarge (i-8eae4349)</string>
       <hudson.plugins.xvnc.DisplayAllocator>
-        <allocatedNumbers>
-          <int>75</int>
-        </allocatedNumbers>
+        <allocatedNumbers/>
         <blacklistedNumbers/>
       </hudson.plugins.xvnc.DisplayAllocator>
     </entry>
