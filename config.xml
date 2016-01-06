@@ -206,7 +206,7 @@ set +x</initScript>
           <ami>ami-b93264d0</ami>
           <description>ubuntu-12.04-glx-g2.2xlarge</description>
           <zone>us-east-1</zone>
-          <securityGroups>docker-workshop</securityGroups>
+          <securityGroups></securityGroups>
           <remoteFS>/mnt</remoteFS>
           <type>G22xlarge</type>
           <ebsOptimized>false</ebsOptimized>
@@ -279,7 +279,7 @@ set +x</initScript>
           <numExecutors>2</numExecutors>
           <remoteAdmin>ubuntu</remoteAdmin>
           <jvmopts></jvmopts>
-          <subnetId>subnet-d4a79db1</subnetId>
+          <subnetId></subnetId>
           <idleTerminationMinutes>10</idleTerminationMinutes>
           <iamInstanceProfile></iamInstanceProfile>
           <useEphemeralDevices>false</useEphemeralDevices>
