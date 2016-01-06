@@ -94,30 +94,30 @@
           <description>ubuntu-g2.2xlarge</description>
           <zone>us-west-2a</zone>
           <securityGroups>docker-workshop</securityGroups>
-          <remoteFS>/</remoteFS>
+          <remoteFS>/home/ubuntu</remoteFS>
           <type>G22xlarge</type>
           <ebsOptimized>false</ebsOptimized>
           <labels>android_slave</labels>
           <mode>EXCLUSIVE</mode>
           <initScript>#!/bin/sh
 
+set +x
+echo ====================================
+echo =============== 1 ==================
+echo ====================================
 set -x
 
-pwd
-whoami
-id
-groups
+sudo chmod 0777 /mnt
+
 
 set +x
 echo ====================================
-echo ==============           1              ==================
+echo =============== 2 ==================
 echo ====================================
 set -x
 
-sudo apt-get install -y expect
-sudo dpkg --add-architecture i386
 sudo apt-get update 
-sudo apt-get install -y libc6:i386 libncurses5:i386 libstdc++6:i386
+sudo apt-get install -y expect
 
 #### Prevent the error &quot;unable to resolve host....&quot;
 #export current_host=$(&apos;hostname&apos;)
@@ -128,7 +128,7 @@ sudo apt-get install -y libc6:i386 libncurses5:i386 libstdc++6:i386
 
 set +x
 echo ====================================
-echo ==============           2              ==================
+echo =============== 3 ==================
 echo ====================================
 set -x
 
@@ -138,24 +138,13 @@ if [ ! -x &quot;$JAVA&quot; ]; then
    sudo apt-get update &amp;&amp; sudo apt-get install -y openjdk-7-jre ca-certificates-java tzdata-java icedtea-7-jre-jamvm openjdk-7-jre-headless openjdk-7-jdk wget git xfce4 xfce4-goodies tightvncserver
 fi
 
-# Create new jenkins User and set password
-#sudo useradd jenkins -d /home/ubuntu
-
-# Add the user jenkins to the sudo group so no password will be needed
-#sudo usermod -a -G sudo jenkins
-
-#echo &apos;jenkins:1234qweR&apos; | sudo chpasswd
-
-# Set vncserver password for current user
-
-#sudo chmod -R 0777 /home/ubuntu/.vnc/
-
-#sudo -u jenkins -s
-
+sudo dpkg --add-architecture i386
+sudo apt-get update 
+sudo apt-get install -y libc6:i386 libncurses5:i386 libstdc++6:i386
 
 set +x
 echo ====================================
-echo ==============           3              ==================
+echo =============== 4 ==================
 echo ====================================
 set -x
 
