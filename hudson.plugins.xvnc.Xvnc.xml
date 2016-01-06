@@ -91,6 +91,60 @@
       </hudson.plugins.xvnc.DisplayAllocator>
     </entry>
     <entry>
+      <string>ubuntu-g2.2xlarge (i-c81dff0f)</string>
+      <hudson.plugins.xvnc.DisplayAllocator>
+        <allocatedNumbers/>
+        <blacklistedNumbers>
+          <int>34</int>
+          <int>69</int>
+          <int>84</int>
+          <int>49</int>
+          <int>18</int>
+          <int>66</int>
+          <int>82</int>
+          <int>25</int>
+          <int>57</int>
+          <int>73</int>
+          <int>74</int>
+        </blacklistedNumbers>
+      </hudson.plugins.xvnc.DisplayAllocator>
+    </entry>
+    <entry>
+      <string>ubuntu-g2.2xlarge (i-c4d93b03)</string>
+      <hudson.plugins.xvnc.DisplayAllocator>
+        <allocatedNumbers/>
+        <blacklistedNumbers/>
+      </hudson.plugins.xvnc.DisplayAllocator>
+    </entry>
+    <entry>
+      <string>ubuntu-g2.2xlarge (i-2fdf3fe8)</string>
+      <hudson.plugins.xvnc.DisplayAllocator>
+        <allocatedNumbers>
+          <int>56</int>
+        </allocatedNumbers>
+        <blacklistedNumbers/>
+      </hudson.plugins.xvnc.DisplayAllocator>
+    </entry>
+    <entry>
+      <string>ubuntu-g2.2xlarge (i-3510f2f2)</string>
+      <hudson.plugins.xvnc.DisplayAllocator>
+        <allocatedNumbers/>
+        <blacklistedNumbers>
+          <int>16</int>
+          <int>19</int>
+          <int>49</int>
+          <int>38</int>
+          <int>27</int>
+          <int>41</int>
+          <int>12</int>
+          <int>73</int>
+          <int>14</int>
+          <int>45</int>
+          <int>60</int>
+        </blacklistedNumbers>
+      </hudson.plugins.xvnc.DisplayAllocator>
+    </entry>
+    <entry>
       <string>ubuntu-g2.2xlarge (i-640fefa3)</string>
       <hudson.plugins.xvnc.DisplayAllocator>
         <allocatedNumbers/>
@@ -121,25 +175,6 @@
       </hudson.plugins.xvnc.DisplayAllocator>
     </entry>
     <entry>
-      <string>ubuntu-g2.2xlarge (i-c81dff0f)</string>
-      <hudson.plugins.xvnc.DisplayAllocator>
-        <allocatedNumbers/>
-        <blacklistedNumbers>
-          <int>34</int>
-          <int>69</int>
-          <int>84</int>
-          <int>49</int>
-          <int>18</int>
-          <int>66</int>
-          <int>82</int>
-          <int>25</int>
-          <int>57</int>
-          <int>73</int>
-          <int>74</int>
-        </blacklistedNumbers>
-      </hudson.plugins.xvnc.DisplayAllocator>
-    </entry>
-    <entry>
       <string>ubuntu-g2.2xlarge (i-2b2acaec)</string>
       <hudson.plugins.xvnc.DisplayAllocator>
         <allocatedNumbers>
@@ -162,9 +197,11 @@
       </hudson.plugins.xvnc.DisplayAllocator>
     </entry>
     <entry>
-      <string>ubuntu-g2.2xlarge (i-c4d93b03)</string>
+      <string>ubuntu-g2.2xlarge (i-d75dbf10)</string>
       <hudson.plugins.xvnc.DisplayAllocator>
-        <allocatedNumbers/>
+        <allocatedNumbers>
+          <int>39</int>
+        </allocatedNumbers>
         <blacklistedNumbers/>
       </hudson.plugins.xvnc.DisplayAllocator>
     </entry>
@@ -193,38 +230,10 @@
       </hudson.plugins.xvnc.DisplayAllocator>
     </entry>
     <entry>
-      <string>ubuntu-g2.2xlarge (i-2fdf3fe8)</string>
-      <hudson.plugins.xvnc.DisplayAllocator>
-        <allocatedNumbers>
-          <int>56</int>
-        </allocatedNumbers>
-        <blacklistedNumbers/>
-      </hudson.plugins.xvnc.DisplayAllocator>
-    </entry>
-    <entry>
       <string>ubuntu-g2.2xlarge (i-2d5ab8ea)</string>
       <hudson.plugins.xvnc.DisplayAllocator>
         <allocatedNumbers/>
         <blacklistedNumbers/>
-      </hudson.plugins.xvnc.DisplayAllocator>
-    </entry>
-    <entry>
-      <string>ubuntu-g2.2xlarge (i-3510f2f2)</string>
-      <hudson.plugins.xvnc.DisplayAllocator>
-        <allocatedNumbers/>
-        <blacklistedNumbers>
-          <int>16</int>
-          <int>19</int>
-          <int>49</int>
-          <int>38</int>
-          <int>27</int>
-          <int>41</int>
-          <int>12</int>
-          <int>73</int>
-          <int>14</int>
-          <int>45</int>
-          <int>60</int>
-        </blacklistedNumbers>
       </hudson.plugins.xvnc.DisplayAllocator>
     </entry>
     <entry>
