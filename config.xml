@@ -113,22 +113,23 @@ fi
 set -x
 
 # Create new jenkins User and set password
-sudo useradd jenkins -d /home/ubuntu
+#sudo useradd jenkins -d /home/ubuntu
 
 # Add the user jenkins to the sudo group so no password will be needed
-sudo usermod -a -G sudo jenkins
+#sudo usermod -a -G sudo jenkins
 
-echo &apos;jenkins:1234qweR&apos; | sudo chpasswd
+# echo &apos;jenkins:1234qweR&apos; | sudo chpasswd
+echo &apos;ubuntu:1234qweR&apos; | sudo chpasswd
 
 # Set vncserver password for current user
 
-sudo chmod -R 0777 /home/ubuntu/.vnc/
+#sudo chmod -R 0777 /home/ubuntu/.vnc/
 
-sudo -u jenkins -s
+#sudo -u jenkins -s
 
-whoami
-id
-groups
+#whoami
+#id
+#groups
 
 prog=/usr/bin/vncserver
 mypass=&quot;1234qweR&quot;
