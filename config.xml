@@ -204,12 +204,12 @@ set +x</initScript>
       <templates>
         <hudson.plugins.ec2.SlaveTemplate>
           <ami>ami-637c220a</ami>
-          <description>US-EAST-1</description>
+          <description>amazonLinux-g2.2xlarge</description>
           <zone>us-east-1</zone>
           <securityGroups>docker-workshop</securityGroups>
           <remoteFS>/mnt</remoteFS>
           <type>G22xlarge</type>
-          <ebsOptimized>false</ebsOptimized>
+          <ebsOptimized>true</ebsOptimized>
           <labels>ubuntu_gpu</labels>
           <mode>EXCLUSIVE</mode>
           <initScript>#!/bin/sh
