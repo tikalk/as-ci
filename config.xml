@@ -206,7 +206,7 @@ set +x</initScript>
           <ami>ami-637c220a</ami>
           <description>amazonLinux-g2.2xlarge</description>
           <zone>us-east-1</zone>
-          <securityGroups>docker-workshop</securityGroups>
+          <securityGroups></securityGroups>
           <remoteFS>/mnt</remoteFS>
           <type>G22xlarge</type>
           <ebsOptimized>true</ebsOptimized>
@@ -279,7 +279,7 @@ set +x</initScript>
           <numExecutors>2</numExecutors>
           <remoteAdmin>ubuntu</remoteAdmin>
           <jvmopts></jvmopts>
-          <subnetId>subnet-d4a79db1</subnetId>
+          <subnetId></subnetId>
           <idleTerminationMinutes>10</idleTerminationMinutes>
           <iamInstanceProfile></iamInstanceProfile>
           <useEphemeralDevices>false</useEphemeralDevices>
@@ -293,7 +293,7 @@ set +x</initScript>
             </hudson.plugins.ec2.EC2Tag>
           </tags>
           <usePrivateDnsName>false</usePrivateDnsName>
-          <associatePublicIp>false</associatePublicIp>
+          <associatePublicIp>true</associatePublicIp>
           <useDedicatedTenancy>false</useDedicatedTenancy>
           <amiType class="hudson.plugins.ec2.UnixData">
             <rootCommandPrefix></rootCommandPrefix>
