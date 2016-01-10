@@ -32,7 +32,7 @@
   </scm>
   <assignedNode>android_slave</assignedNode>
   <canRoam>false</canRoam>
-  <disabled>false</disabled>
+  <disabled>true</disabled>
   <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
   <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
   <jdk>(System)</jdk>
@@ -105,6 +105,11 @@ LIBGL_DEBUG=verbose</propertiesContent>
       <useXauthority>true</useXauthority>
     </hudson.plugins.xvnc.Xvnc>
     <hudson.plugins.android__emulator.AndroidEmulator plugin="android-emulator@2.13.1">
+      <descriptor>
+        <androidHome>$JENKINS_HOME/tools/android-sdk</androidHome>
+        <shouldInstallSdk>true</shouldInstallSdk>
+        <shouldKeepInWorkspace>true</shouldKeepInWorkspace>
+      </descriptor>
       <osVersion>android-23</osVersion>
       <screenDensity>160</screenDensity>
       <screenResolution>HVGA</screenResolution>
