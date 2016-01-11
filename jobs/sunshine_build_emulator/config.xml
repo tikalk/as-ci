@@ -92,8 +92,7 @@
     <EnvInjectBuildWrapper plugin="envinject@1.92.1">
       <info>
         <propertiesContent>### USING GRADLE VERSION 2.4 AND THEREFORE NEED
-ANDROID_DAILY_OVERRIDE= a8faa180fc282060c9b8ec88f9bdcc9072121284
-LIBGL_DEBUG=verbose</propertiesContent>
+ANDROID_DAILY_OVERRIDE= a8faa180fc282060c9b8ec88f9bdcc9072121284</propertiesContent>
         <loadFilesFromMaster>false</loadFilesFromMaster>
       </info>
     </EnvInjectBuildWrapper>
@@ -104,10 +103,14 @@ LIBGL_DEBUG=verbose</propertiesContent>
     <org.jenkinsci.plugins.preSCMbuildstep.PreSCMBuildStepsWrapper plugin="preSCMbuildstep@0.3">
       <buildSteps>
         <hudson.tasks.Shell>
-          <command>echo AAAAAAAAAAAAAAAA
+          <command>set -x 
+echo AAAAAAAAAAAAAAAA
 echo $PATH
+whoami
+who am i
 echo BBBBBBBBBBBBBBBB
-cp -r /Users/tikal/jenkinsSlave/vncserver $WORKSPACE</command>
+cp -r /Users/tikal/jenkinsSlave/vncserver $WORKSPACE
+set +x</command>
         </hudson.tasks.Shell>
       </buildSteps>
       <failOnError>false</failOnError>
