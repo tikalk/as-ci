@@ -106,8 +106,11 @@ ANDROID_DAILY_OVERRIDE= a8faa180fc282060c9b8ec88f9bdcc9072121284</propertiesCont
           <command>set -x 
 echo AAAAAAAAAAAAAAAA
 echo $PATH
+export PATH=$PATH:Users/tikal/jenkinsSlave/vncserver
+echo $PATH
 whoami
 who am i
+ls
 echo BBBBBBBBBBBBBBBB
 cp -r /Users/tikal/jenkinsSlave/vncserver $WORKSPACE
 set +x</command>
