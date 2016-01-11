@@ -30,7 +30,7 @@
     <submoduleCfg class="list"/>
     <extensions/>
   </scm>
-  <assignedNode>android_slave</assignedNode>
+  <assignedNode>doron</assignedNode>
   <canRoam>false</canRoam>
   <disabled>true</disabled>
   <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
@@ -105,11 +105,6 @@ LIBGL_DEBUG=verbose</propertiesContent>
       <useXauthority>true</useXauthority>
     </hudson.plugins.xvnc.Xvnc>
     <hudson.plugins.android__emulator.AndroidEmulator plugin="android-emulator@2.13.1">
-      <descriptor>
-        <androidHome>$JENKINS_HOME/tools/android-sdk</androidHome>
-        <shouldInstallSdk>true</shouldInstallSdk>
-        <shouldKeepInWorkspace>true</shouldKeepInWorkspace>
-      </descriptor>
       <osVersion>android-23</osVersion>
       <screenDensity>160</screenDensity>
       <screenResolution>HVGA</screenResolution>
