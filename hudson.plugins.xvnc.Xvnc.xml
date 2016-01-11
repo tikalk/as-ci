@@ -407,6 +407,7 @@
       <hudson.plugins.xvnc.DisplayAllocator>
         <allocatedNumbers>
           <int>80</int>
+          <int>61</int>
         </allocatedNumbers>
         <blacklistedNumbers/>
       </hudson.plugins.xvnc.DisplayAllocator>
