@@ -111,11 +111,6 @@ sudo chmod 0777 /mnt
 
 sudo apt-get update
 
-sudo add-apt-repository main
-sudo add-apt-repository universe
-sudo add-apt-repository restricted
-sudo add-apt-repository multiverse
-
 set +x
 echo ====================================
 echo =============== 2 ==================
@@ -127,17 +122,17 @@ set -x
 #export local_host_ip=&quot;127.0.0.1&quot;
 #sed -i &quot;$local_host_ip	$current_host&quot; /etc/hosts
 
+#### Install packages just on clean Envirnment
+export JAVA=&quot;/usr/bin/java&quot;
+if [ ! -x &quot;$JAVA&quot; ]; then
+   sudo apt-get update &amp;&amp; sudo apt-get install -y openjdk-7-jre ca-certificates-java tzdata-java icedtea-7-jre-jamvm openjdk-7-jre-headless openjdk-7-jdk wget git xfce4 xfce4-goodies tightvncserver xvfb
+fi
+
 set +x
 echo ====================================
 echo =============== 3 ==================
 echo ====================================
 set -x
-
-#### Install packages just on clean Envirnment
-export JAVA=&quot;/usr/bin/java&quot;
-if [ ! -x &quot;$JAVA&quot; ]; then
-   sudo apt-get update &amp;&amp; sudo apt-get install -y openjdk-7-jre ca-certificates-java tzdata-java icedtea-7-jre-jamvm openjdk-7-jre-headless openjdk-7-jdk wget git xfce4 xfce4-goodies tightvncserver
-fi
 
 sudo dpkg --add-architecture i386
 sudo apt-get update 
