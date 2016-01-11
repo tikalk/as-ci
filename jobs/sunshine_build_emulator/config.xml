@@ -95,7 +95,7 @@
       <timeout>0</timeout>
       <displayNameOffset>1</displayNameOffset>
       <additionalOptions></additionalOptions>
-      <shutdownWithBuild>false</shutdownWithBuild>
+      <shutdownWithBuild>true</shutdownWithBuild>
       <autoDisplayName>true</autoDisplayName>
       <assignedLabels>ubuntu_slave</assignedLabels>
       <parallelBuild>false</parallelBuild>
@@ -119,9 +119,9 @@ echo $PATH
 whoami
 who am i
 ls
-echo BBBBBBBBBBBBBBBB
-cp -r /Users/tikal/jenkinsSlave/vncserver $WORKSPACE
-chmod a+x vncserver
+#echo BBBBBBBBBBBBBBBB
+#cp -r /Users/tikal/jenkinsSlave/vncserver $WORKSPACE
+#chmod a+x vncserver
 set +x</command>
         </hudson.tasks.Shell>
       </buildSteps>
