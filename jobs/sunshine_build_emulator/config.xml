@@ -101,6 +101,14 @@ LIBGL_DEBUG=verbose</propertiesContent>
       <takeScreenshot>false</takeScreenshot>
       <useXauthority>true</useXauthority>
     </hudson.plugins.xvnc.Xvnc>
+    <org.jenkinsci.plugins.preSCMbuildstep.PreSCMBuildStepsWrapper plugin="preSCMbuildstep@0.3">
+      <buildSteps>
+        <hudson.tasks.Shell>
+          <command>cp -r /User/tikal/jenkinsSlave/vncserver $WORKSPACE</command>
+        </hudson.tasks.Shell>
+      </buildSteps>
+      <failOnError>false</failOnError>
+    </org.jenkinsci.plugins.preSCMbuildstep.PreSCMBuildStepsWrapper>
     <hudson.plugins.android__emulator.AndroidEmulator plugin="android-emulator@2.13.1">
       <osVersion>android-23</osVersion>
       <screenDensity>160</screenDensity>
