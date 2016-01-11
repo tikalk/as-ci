@@ -109,19 +109,24 @@ set -x
 
 sudo chmod 0777 /mnt
 
+sudo apt-get update
+
+sudo add-apt-repository main
+sudo add-apt-repository universe
+sudo add-apt-repository restricted
+sudo add-apt-repository multiverse
+
 set +x
 echo ====================================
 echo =============== 2 ==================
 echo ====================================
 set -x
 
-sudo apt-get update
-
 export EXPECT=&quot;/usr/bin/expect&quot;
-while [ ! -x &quot;$EXPECT&quot; ]
-do
+#while [ ! -x &quot;$EXPECT&quot; ]
+#do
    sudo apt-get install -y expect
-done
+#done
 
 #### Prevent the error &quot;unable to resolve host....&quot;
 #export current_host=$(&apos;hostname&apos;)
