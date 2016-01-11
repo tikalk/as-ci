@@ -163,10 +163,9 @@
     <entry>
       <string>ubuntu.14.04-g2.2xlarge (i-fc996f3b)</string>
       <hudson.plugins.xvnc.DisplayAllocator>
-        <allocatedNumbers>
-          <int>54</int>
-        </allocatedNumbers>
+        <allocatedNumbers/>
         <blacklistedNumbers>
+          <int>54</int>
           <int>80</int>
           <int>83</int>
           <int>82</int>
