@@ -88,6 +88,7 @@
     </org.jenkinsci.plugins.android__lint.LintPublisher>
   </publishers>
   <buildWrappers>
+    <hudson.plugins.timestamper.TimestamperBuildWrapper plugin="timestamper@1.7.2"/>
     <EnvInjectBuildWrapper plugin="envinject@1.92.1">
       <info>
         <propertiesContent>### USING GRADLE VERSION 2.4 AND THEREFORE NEED
