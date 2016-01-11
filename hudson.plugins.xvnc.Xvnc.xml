@@ -403,6 +403,15 @@
       </hudson.plugins.xvnc.DisplayAllocator>
     </entry>
     <entry>
+      <string>DoronMac</string>
+      <hudson.plugins.xvnc.DisplayAllocator>
+        <allocatedNumbers>
+          <int>80</int>
+        </allocatedNumbers>
+        <blacklistedNumbers/>
+      </hudson.plugins.xvnc.DisplayAllocator>
+    </entry>
+    <entry>
       <string>ubuntu-g2.2xlarge (i-640fefa3)</string>
       <hudson.plugins.xvnc.DisplayAllocator>
         <allocatedNumbers/>
