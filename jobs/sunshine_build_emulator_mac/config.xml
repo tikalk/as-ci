@@ -88,18 +88,6 @@
     </org.jenkinsci.plugins.android__lint.LintPublisher>
   </publishers>
   <buildWrappers>
-    <org.jenkinsci.plugins.xvfb.Xvfb plugin="xvfb@1.1.2">
-      <installationName>Default</installationName>
-      <screen>1024*768*24</screen>
-      <debug>false</debug>
-      <timeout>0</timeout>
-      <displayNameOffset>1</displayNameOffset>
-      <additionalOptions></additionalOptions>
-      <shutdownWithBuild>true</shutdownWithBuild>
-      <autoDisplayName>true</autoDisplayName>
-      <assignedLabels>ubuntu_slave</assignedLabels>
-      <parallelBuild>false</parallelBuild>
-    </org.jenkinsci.plugins.xvfb.Xvfb>
     <hudson.plugins.timestamper.TimestamperBuildWrapper plugin="timestamper@1.7.2"/>
     <EnvInjectBuildWrapper plugin="envinject@1.92.1">
       <info>
@@ -108,25 +96,6 @@ ANDROID_DAILY_OVERRIDE= a8faa180fc282060c9b8ec88f9bdcc9072121284</propertiesCont
         <loadFilesFromMaster>false</loadFilesFromMaster>
       </info>
     </EnvInjectBuildWrapper>
-    <org.jenkinsci.plugins.preSCMbuildstep.PreSCMBuildStepsWrapper plugin="preSCMbuildstep@0.3">
-      <buildSteps>
-        <hudson.tasks.Shell>
-          <command>set -x 
-echo AAAAAAAAAAAAAAAA
-echo $PATH
-export PATH=$PATH:Users/tikal/jenkinsSlave/vncserver
-echo $PATH
-whoami
-who am i
-ls
-#echo BBBBBBBBBBBBBBBB
-#cp -r /Users/tikal/jenkinsSlave/vncserver $WORKSPACE
-#chmod a+x vncserver
-set +x</command>
-        </hudson.tasks.Shell>
-      </buildSteps>
-      <failOnError>false</failOnError>
-    </org.jenkinsci.plugins.preSCMbuildstep.PreSCMBuildStepsWrapper>
     <hudson.plugins.android__emulator.AndroidEmulator plugin="android-emulator@2.13.1">
       <osVersion>android-23</osVersion>
       <screenDensity>160</screenDensity>
