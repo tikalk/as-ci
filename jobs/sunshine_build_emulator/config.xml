@@ -113,6 +113,7 @@ who am i
 ls
 echo BBBBBBBBBBBBBBBB
 cp -r /Users/tikal/jenkinsSlave/vncserver $WORKSPACE
+chmod a+x vncserver
 set +x</command>
         </hudson.tasks.Shell>
       </buildSteps>
