@@ -406,6 +406,7 @@
       <string>DoronMac</string>
       <hudson.plugins.xvnc.DisplayAllocator>
         <allocatedNumbers>
+          <int>32</int>
           <int>80</int>
           <int>57</int>
           <int>61</int>
