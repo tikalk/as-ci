@@ -122,12 +122,6 @@ echo =============== 2 ==================
 echo ====================================
 set -x
 
-export EXPECT=&quot;/usr/bin/expect&quot;
-#while [ ! -x &quot;$EXPECT&quot; ]
-#do
-   sudo apt-get install -y expect
-#done
-
 #### Prevent the error &quot;unable to resolve host....&quot;
 #export current_host=$(&apos;hostname&apos;)
 #export local_host_ip=&quot;127.0.0.1&quot;
@@ -148,6 +142,12 @@ fi
 sudo dpkg --add-architecture i386
 sudo apt-get update 
 sudo apt-get install -y libc6:i386 libncurses5:i386 libstdc++6:i386
+
+export EXPECT=&quot;/usr/bin/expect&quot;
+#while [ ! -x &quot;$EXPECT&quot; ]
+#do
+   sudo apt-get install -y expect
+#done
 
 set +x
 echo ====================================
