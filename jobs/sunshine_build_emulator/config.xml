@@ -97,7 +97,7 @@
       <additionalOptions></additionalOptions>
       <shutdownWithBuild>false</shutdownWithBuild>
       <autoDisplayName>true</autoDisplayName>
-      <assignedLabels>doron </assignedLabels>
+      <assignedLabels>ubuntu_slave</assignedLabels>
       <parallelBuild>false</parallelBuild>
     </org.jenkinsci.plugins.xvfb.Xvfb>
     <hudson.plugins.timestamper.TimestamperBuildWrapper plugin="timestamper@1.7.2"/>
