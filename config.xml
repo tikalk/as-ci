@@ -274,6 +274,7 @@ set +x</initScript>
         <comparator class="hudson.util.CaseInsensitiveComparator"/>
         <string>sunshine_build</string>
         <string>sunshine_build_emulator</string>
+        <string>sunshine_build_emulator_mac</string>
         <string>test</string>
       </jobNames>
       <jobFilters/>
