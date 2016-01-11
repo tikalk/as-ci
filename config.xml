@@ -146,7 +146,7 @@ echo ====================================
 set -x
 
 prog=/usr/bin/vncserver
-mypass=&quot;1234qweR&quot;
+mypass=&quot;1234qweRlong&quot;
 
 /usr/bin/expect &lt;&lt;EOF
 spawn &quot;$prog&quot;
