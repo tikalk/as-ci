@@ -407,6 +407,7 @@
       <hudson.plugins.xvnc.DisplayAllocator>
         <allocatedNumbers>
           <int>35</int>
+          <int>49</int>
           <int>32</int>
           <int>18</int>
           <int>80</int>
