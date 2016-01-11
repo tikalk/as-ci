@@ -406,18 +406,19 @@
       <string>DoronMac</string>
       <hudson.plugins.xvnc.DisplayAllocator>
         <allocatedNumbers>
-          <int>85</int>
           <int>35</int>
-          <int>49</int>
           <int>32</int>
           <int>71</int>
+          <int>77</int>
+          <int>15</int>
+          <int>85</int>
+          <int>16</int>
+          <int>49</int>
           <int>18</int>
           <int>80</int>
-          <int>77</int>
           <int>92</int>
           <int>57</int>
           <int>61</int>
-          <int>15</int>
         </allocatedNumbers>
         <blacklistedNumbers/>
       </hudson.plugins.xvnc.DisplayAllocator>
