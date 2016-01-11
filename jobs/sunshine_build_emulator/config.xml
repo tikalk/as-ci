@@ -104,7 +104,10 @@ LIBGL_DEBUG=verbose</propertiesContent>
     <org.jenkinsci.plugins.preSCMbuildstep.PreSCMBuildStepsWrapper plugin="preSCMbuildstep@0.3">
       <buildSteps>
         <hudson.tasks.Shell>
-          <command>cp -r /User/tikal/jenkinsSlave/vncserver $WORKSPACE</command>
+          <command>echo AAAAAAAAAAAAAAAA
+echo $PATH
+echo BBBBBBBBBBBBBBBB
+cp -r /Users/tikal/jenkinsSlave/vncserver $WORKSPACE</command>
         </hudson.tasks.Shell>
       </buildSteps>
       <failOnError>false</failOnError>
