@@ -225,6 +225,7 @@ set +x</initScript>
         <string>as-notifications</string>
         <string>as-segments-service</string>
         <string>ft-analytics-deploy</string>
+        <string>syslog-container</string>
         <string>test-deploy</string>
       </jobNames>
       <jobFilters/>
