@@ -137,6 +137,7 @@
         set -x
 
         sudo export ANDROID_HOME=/mnt/tools/android-sdk
+        sudo update-rc.d jenkins defaults 
         sudo reboot
         set +x</initScript>
           <tmpDir></tmpDir>
