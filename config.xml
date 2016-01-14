@@ -147,7 +147,9 @@
         wget http://dl.google.com/android/android-sdk_r20-linux.tgz
         tar -xvzf android-sdk_r20-linux.tgz
 
-        sudo cp -rv /tmp/android-sdk-linux/ /mnt/tools/android-sdk
+        sudo cp -rv /tmp/android-sdk-linux/* /mnt/tools/android-sdk
+
+        sudo chmod a+x /mnt/tools/android-sdk
 
         set +x</initScript>
           <tmpDir></tmpDir>
