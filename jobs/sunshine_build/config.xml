@@ -87,13 +87,5 @@
       <pattern>**/lint-results.xml</pattern>
     </org.jenkinsci.plugins.android__lint.LintPublisher>
   </publishers>
-  <buildWrappers>
-    <EnvInjectBuildWrapper plugin="envinject@1.92.1">
-      <info>
-        <propertiesContent>### USING GRADLE VERSION 2.4 AND THEREFORE NEED
-ANDROID_DAILY_OVERRIDE= 9971b4ee06973b41cb7796ddc6b12488e715f8e3</propertiesContent>
-        <loadFilesFromMaster>false</loadFilesFromMaster>
-      </info>
-    </EnvInjectBuildWrapper>
-  </buildWrappers>
+  <buildWrappers/>
 </project>
