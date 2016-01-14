@@ -173,7 +173,7 @@
           <description>windows</description>
           <zone>us-west-2a</zone>
           <securityGroups>docker-workshop</securityGroups>
-          <remoteFS>c:\Users\Administrator\.jenkins</remoteFS>
+          <remoteFS></remoteFS>
           <type>G22xlarge</type>
           <ebsOptimized>true</ebsOptimized>
           <labels>win_emulator</labels>
@@ -181,16 +181,22 @@
           <initScript></initScript>
           <tmpDir></tmpDir>
           <userData></userData>
-          <numExecutors>26</numExecutors>
+          <numExecutors>2</numExecutors>
           <remoteAdmin>Administrator</remoteAdmin>
           <jvmopts></jvmopts>
-          <subnetId></subnetId>
+          <subnetId>subnet-d4a79db1</subnetId>
           <idleTerminationMinutes>15</idleTerminationMinutes>
           <iamInstanceProfile></iamInstanceProfile>
           <useEphemeralDevices>false</useEphemeralDevices>
           <customDeviceMapping></customDeviceMapping>
           <instanceCap>2147483647</instanceCap>
           <stopOnTerminate>false</stopOnTerminate>
+          <tags>
+            <hudson.plugins.ec2.EC2Tag>
+              <name>JENKINS_SLAVE</name>
+              <value>jenkins</value>
+            </hudson.plugins.ec2.EC2Tag>
+          </tags>
           <usePrivateDnsName>false</usePrivateDnsName>
           <associatePublicIp>false</associatePublicIp>
           <useDedicatedTenancy>false</useDedicatedTenancy>
