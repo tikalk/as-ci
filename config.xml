@@ -168,6 +168,40 @@
           <launchTimeout>2147483647</launchTimeout>
           <connectBySSHProcess>true</connectBySSHProcess>
         </hudson.plugins.ec2.SlaveTemplate>
+        <hudson.plugins.ec2.SlaveTemplate>
+          <ami>ami-83a5bce2</ami>
+          <description>windows</description>
+          <zone>us-west-2a</zone>
+          <securityGroups>docker-workshop</securityGroups>
+          <remoteFS>c:\Users\Administrator/.jenkins</remoteFS>
+          <type>G22xlarge</type>
+          <ebsOptimized>true</ebsOptimized>
+          <labels>win_emulator</labels>
+          <mode>NORMAL</mode>
+          <initScript></initScript>
+          <tmpDir></tmpDir>
+          <userData></userData>
+          <numExecutors></numExecutors>
+          <remoteAdmin>Administrator</remoteAdmin>
+          <jvmopts></jvmopts>
+          <subnetId></subnetId>
+          <idleTerminationMinutes>15</idleTerminationMinutes>
+          <iamInstanceProfile></iamInstanceProfile>
+          <useEphemeralDevices>false</useEphemeralDevices>
+          <customDeviceMapping></customDeviceMapping>
+          <instanceCap>2147483647</instanceCap>
+          <stopOnTerminate>false</stopOnTerminate>
+          <usePrivateDnsName>false</usePrivateDnsName>
+          <associatePublicIp>false</associatePublicIp>
+          <useDedicatedTenancy>false</useDedicatedTenancy>
+          <amiType class="hudson.plugins.ec2.WindowsData">
+            <password>tgPCN2oiE5a</password>
+            <useHTTPS>false</useHTTPS>
+            <bootDelay></bootDelay>
+          </amiType>
+          <launchTimeout>2147483647</launchTimeout>
+          <connectBySSHProcess>false</connectBySSHProcess>
+        </hudson.plugins.ec2.SlaveTemplate>
       </templates>
       <region>us-west-2</region>
     </hudson.plugins.ec2.EC2Cloud>
