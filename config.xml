@@ -169,7 +169,7 @@
           <connectBySSHProcess>true</connectBySSHProcess>
         </hudson.plugins.ec2.SlaveTemplate>
         <hudson.plugins.ec2.SlaveTemplate>
-          <ami>ami-83a5bce2</ami>
+          <ami>ami-1dcad47c</ami>
           <description>windows</description>
           <zone>us-west-2a</zone>
           <securityGroups>docker-workshop</securityGroups>
