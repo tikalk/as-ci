@@ -101,7 +101,7 @@
       <deviceLocale>en_US</deviceLocale>
       <targetAbi>armeabi-v7a</targetAbi>
       <hardwareProperties/>
-      <wipeData>true</wipeData>
+      <wipeData>false</wipeData>
       <showWindow>false</showWindow>
       <useSnapshots>false</useSnapshots>
       <deleteAfterBuild>false</deleteAfterBuild>
