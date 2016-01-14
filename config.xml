@@ -158,7 +158,7 @@
           <remoteAdmin>ubuntu</remoteAdmin>
           <jvmopts></jvmopts>
           <subnetId>subnet-d4a79db1</subnetId>
-          <idleTerminationMinutes>10</idleTerminationMinutes>
+          <idleTerminationMinutes>60</idleTerminationMinutes>
           <iamInstanceProfile></iamInstanceProfile>
           <useEphemeralDevices>false</useEphemeralDevices>
           <customDeviceMapping></customDeviceMapping>
