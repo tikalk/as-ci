@@ -139,7 +139,15 @@
 
         sudo echo &quot;export ANDROID_HOME=/mnt/tools/android-sdk&quot; &gt;&gt; ~/.bash_profile
         sudo source ~/.bash_profile
-        sudo update-rc.d jenkins defaults 
+
+        sudo update-rc.d jenkins defaults
+
+
+        cd ANDROID_HOME
+        wget http://dl.google.com/android/android-sdk_r20-linux.tgz
+        tar -xvzf android-sdk_r20-linux.tgz
+
+        scp
         set +x</initScript>
           <tmpDir></tmpDir>
           <userData></userData>
