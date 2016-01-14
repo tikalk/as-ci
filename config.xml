@@ -97,7 +97,7 @@
           <remoteFS>/mnt</remoteFS>
           <type>G22xlarge</type>
           <ebsOptimized>false</ebsOptimized>
-          <labels>android_slave</labels>
+          <labels>ubuntu android_slave</labels>
           <mode>EXCLUSIVE</mode>
           <initScript>#!/bin/sh
 
