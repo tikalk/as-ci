@@ -108,7 +108,7 @@
         set -x
 
         sudo chmod 0777 /mnt
-        sudo mkdir /mnt/tools/android-sdk
+        sudo mkdir -p /mnt/tools/android-sdk
 
         sudo apt-get update
         sudo apt-get -f install
