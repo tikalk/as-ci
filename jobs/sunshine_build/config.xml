@@ -90,7 +90,8 @@
   <buildWrappers>
     <EnvInjectBuildWrapper plugin="envinject@1.92.1">
       <info>
-        <propertiesContent>ANDROID_DAILY_OVERRIDE=90ecfccfb16aea38dddf808502818912b4e2fbda</propertiesContent>
+        <propertiesContent>ANDROID_DAILY_OVERRIDE=90ecfccfb16aea38dddf808502818912b4e2fbda
+ANDROID_HOME=/mnt/tools/android-sdk</propertiesContent>
         <loadFilesFromMaster>false</loadFilesFromMaster>
       </info>
     </EnvInjectBuildWrapper>
