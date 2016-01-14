@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <hudson.plugins.android__emulator.AndroidEmulator_-DescriptorImpl plugin="android-emulator@2.13.1">
-  <androidHome>$JENKINS_HOME/tools/android-sdk</androidHome>
+  <androidHome></androidHome>
   <shouldInstallSdk>true</shouldInstallSdk>
   <shouldKeepInWorkspace>true</shouldKeepInWorkspace>
 </hudson.plugins.android__emulator.AndroidEmulator_-DescriptorImpl>

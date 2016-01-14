@@ -319,7 +319,7 @@
             <comparator class="hudson.util.CaseInsensitiveComparator"/>
           </default>
           <int>2</int>
-          <string>ANDROID_HOME</string>
+          <string>aaANDROID_HOME</string>
           <string>$JENKINS_HOME/tools/android-sdk</string>
           <string>DOCKER_REGISTRY</string>
           <string>dreg.tikalknowledge.com:5000</string>
