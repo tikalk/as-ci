@@ -143,11 +143,12 @@
         sudo update-rc.d jenkins defaults
 
 
-        cd ANDROID_HOME
+        cd /tmp
         wget http://dl.google.com/android/android-sdk_r20-linux.tgz
         tar -xvzf android-sdk_r20-linux.tgz
 
-        scp
+        cp -rv /tmp/android-sdk-linux /mnt/tools/android-sdk
+
         set +x</initScript>
           <tmpDir></tmpDir>
           <userData></userData>
