@@ -175,7 +175,7 @@
           <securityGroups>docker-workshop</securityGroups>
           <remoteFS></remoteFS>
           <type>G22xlarge</type>
-          <ebsOptimized>true</ebsOptimized>
+          <ebsOptimized>false</ebsOptimized>
           <labels>win_emulator</labels>
           <mode>NORMAL</mode>
           <initScript></initScript>
