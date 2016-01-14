@@ -94,20 +94,5 @@
         <loadFilesFromMaster>false</loadFilesFromMaster>
       </info>
     </EnvInjectBuildWrapper>
-    <hudson.plugins.android__emulator.AndroidEmulator plugin="android-emulator@2.13.1">
-      <osVersion>android-21</osVersion>
-      <screenDensity>160</screenDensity>
-      <screenResolution>HVGA</screenResolution>
-      <deviceLocale>en_US</deviceLocale>
-      <targetAbi>armeabi-v7a</targetAbi>
-      <hardwareProperties/>
-      <wipeData>false</wipeData>
-      <showWindow>false</showWindow>
-      <useSnapshots>false</useSnapshots>
-      <deleteAfterBuild>false</deleteAfterBuild>
-      <startupDelay>0</startupDelay>
-      <commandLineOptions></commandLineOptions>
-      <executable></executable>
-    </hudson.plugins.android__emulator.AndroidEmulator>
   </buildWrappers>
 </project>
