@@ -136,9 +136,9 @@
         echo ====================================
         set -x
 
-        sudo export ANDROID_HOME=/mnt/tools/android-sdk
+
+        sudo echo &quot;export ANDROID_HOME=/mnt/tools/android-sdk&quot; &gt;&gt; ~/.bash_profile
         sudo update-rc.d jenkins defaults 
-        sudo reboot
         set +x</initScript>
           <tmpDir></tmpDir>
           <userData></userData>
