@@ -127,7 +127,7 @@
         #### Install packages just on clean Environment
         export JAVA=&quot;/usr/bin/java&quot;
         if [ ! -x &quot;$JAVA&quot; ]; then
-        sudo apt-get update &amp;&amp; sudo apt-get install -y openjdk-7-jre ca-certificates-java tzdata-java icedtea-7-jre-jamvm openjdk-7-jre-headless openjdk-7-jdk wget git xfce4 xfce4-goodies tightvncserver xvfb
+        sudo apt-get update &amp;&amp; sudo apt-get install -y openjdk-7-jre ca-certificates-java tzdata-java icedtea-7-jre-jamvm openjdk-7-jre-headless openjdk-7-jdk wget git
         fi
 
         set +x
@@ -138,10 +138,10 @@
 
 
         sudo echo &quot;export ANDROID_HOME=/mnt/tools/android-sdk&quot; &gt;&gt; ~/.bash_profile
+        sudo rcho &quot;alias ll=ls -l&quot; &gt;&gt; ~/.bash_profile
         sudo source ~/.bash_profile
 
         sudo update-rc.d jenkins defaults
-
 
         cd /tmp
         wget http://dl.google.com/android/android-sdk_r20-linux.tgz
@@ -149,7 +149,10 @@
 
         sudo cp -rv /tmp/android-sdk-linux/* /mnt/tools/android-sdk
 
-        sudo chmod a+x /mnt/tools/android-sdk
+        sudo chmod a+x  /mnt/tools/android-sdk
+        sudo chusr ubuntu /mnt/tools/android-sdk
+        sudo chgrp ubuntu /mnt/tools/android-sdk
+
 
         set +x</initScript>
           <tmpDir></tmpDir>
