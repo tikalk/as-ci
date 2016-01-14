@@ -101,81 +101,46 @@
           <mode>EXCLUSIVE</mode>
           <initScript>#!/bin/sh
 
-set +x
-echo ====================================
-echo =============== 1 ==================
-echo ====================================
-set -x
+        set +x
+        echo ====================================
+        echo =============== 1 ==================
+        echo ====================================
+        set -x
 
-sudo chmod 0777 /mnt
-sudo apt-get update
-sudo apt-get -f install
+        sudo chmod 0777 /mnt
+        sudo mkdir /mnt/tools/android-sdk
 
-set +x
-echo ====================================
-echo =============== 2 ==================
-echo ====================================
-set -x
+        sudo apt-get update
+        sudo apt-get -f install
 
-#### Prevent the error &quot;unable to resolve host....&quot;
-#export current_host=$(&apos;hostname&apos;)
-#export local_host_ip=&quot;127.0.0.1&quot;
-#sed -i &quot;$local_host_ip	$current_host&quot; /etc/hosts
+        set +x
+        echo ====================================
+        echo =============== 2 ==================
+        echo ====================================
+        set -x
 
-#### Install packages just on clean Environment
-export JAVA=&quot;/usr/bin/java&quot;
-if [ ! -x &quot;$JAVA&quot; ]; then
-   sudo apt-get update &amp;&amp; sudo apt-get install -y openjdk-7-jre ca-certificates-java tzdata-java icedtea-7-jre-jamvm openjdk-7-jre-headless openjdk-7-jdk wget git xfce4 xfce4-goodies tightvncserver xvfb
-fi
+        #### Prevent the error &quot;unable to resolve host....&quot;
+        #export current_host=$(&apos;hostname&apos;)
+        #export local_host_ip=&quot;127.0.0.1&quot;
+        #sed -i &quot;$local_host_ip	$current_host&quot; /etc/hosts
 
-set +x
-echo ====================================
-echo =============== 3 ==================
-echo ====================================
-set -x
+        #### Install packages just on clean Environment
+        export JAVA=&quot;/usr/bin/java&quot;
+        if [ ! -x &quot;$JAVA&quot; ]; then
+        sudo apt-get update &amp;&amp; sudo apt-get install -y openjdk-7-jre ca-certificates-java tzdata-java icedtea-7-jre-jamvm openjdk-7-jre-headless openjdk-7-jdk wget git xfce4 xfce4-goodies tightvncserver xvfb
+        fi
 
-sudo dpkg --add-architecture i386
-sudo apt-get update 
-sudo apt-get install -y libc6:i386 libncurses5:i386 libstdc++6:i386
+        set +x
+        echo ====================================
+        echo =============== 3 ==================
+        echo ====================================
+        set -x
 
-export EXPECT=&quot;/usr/bin/expect&quot;
-#while [ ! -x &quot;$EXPECT&quot; ]
-#do
-   sudo apt-get install -y expect
-#done
-
-set +x
-echo ====================================
-echo =============== 4 ==================
-echo ====================================
-set -x
-
-prog=/usr/bin/vncserver
-mypass=&quot;1234qweRlong&quot;
-
-/usr/bin/expect &lt;&lt;EOF
-spawn &quot;$prog&quot;
-expect &quot;Password:&quot;
-send &quot;$mypass\r&quot;
-expect &quot;Verify:&quot;
-send &quot;$mypass\r&quot;
-expect &quot;Would you like to enter a view-only password (y/n)?&quot;
-send &quot;no\r&quot;
-expect eof
-exit
-EOF
-
-set +x
-echo ====================================
-echo =============== 5 ==================
-echo ====================================
-set -x
-
-export ANDROID_HOME=/mnt/tools/android-sdk111
-
-set +x</initScript>
+        sudo export ANDROID_HOME=/mnt/tools/android-sdk
+        sudo reboot
+        set +x</initScript>
           <tmpDir></tmpDir>
-          <userData>ANDROID_HOME=/mnt/tools/android-sdk222</userData>
+          <userData></userData>
           <numExecutors>2</numExecutors>
           <remoteAdmin>ubuntu</remoteAdmin>
           <jvmopts></jvmopts>
