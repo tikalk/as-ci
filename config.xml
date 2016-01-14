@@ -165,9 +165,17 @@ expect eof
 exit
 EOF
 
+set +x
+echo ====================================
+echo =============== 5 ==================
+echo ====================================
+set -x
+
+export ANDROID_HOME=/mnt/tools/android-sdk111
+
 set +x</initScript>
           <tmpDir></tmpDir>
-          <userData></userData>
+          <userData>ANDROID_HOME=/mnt/tools/android-sdk222</userData>
           <numExecutors>2</numExecutors>
           <remoteAdmin>ubuntu</remoteAdmin>
           <jvmopts></jvmopts>
